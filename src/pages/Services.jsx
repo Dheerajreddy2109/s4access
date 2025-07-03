@@ -6,6 +6,28 @@ function Services() {
   return (
     <div>
       <Header />
+
+
+
+      {/* services-page-hero-banner start */}
+      <section className="services-page-hero-banner">
+
+        <div className="services-hero-left">
+           <p className="big-heading-text-white">
+      Specialist in SAP<br /> access management
+    </p>
+    <p className="text-white">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br /> eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+          
+        </div>
+
+        <div className="services-hero-right">
+
+        </div>
+
+      </section>
+      {/* services-page-hero-banner End */}
       
       <Footer />
     </div>

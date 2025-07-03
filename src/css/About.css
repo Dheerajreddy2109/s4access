@@ -1,10 +1,12 @@
 .about-banner-section{
-    height: 70vh;
+    height: 50vh;
     background-color: #2E3841;
     display: flex;
     align-items: center;
     justify-content: center;
         text-align:center ;
+        padding: 100px 50px;
+        margin-top: -100px;
 
 }
 
