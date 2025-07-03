@@ -1,0 +1,101 @@
+footer {
+  background-color: black;
+  padding: 100px 50px 50px 50px ;
+ z-index: 1000000000 !important;
+ position: relative;
+ display: flex;
+ align-items: start;
+ justify-content: space-between;
+ flex-direction: row;
+ height: 50vh;
+
+}
+.left-logo-container-footer{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 50px;
+}
+.left-logo-container-footer img{
+  width: auto;
+  height: 40px;
+}
+
+.quicklinks-footer {
+  width: 20%;
+  padding-top: 87px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.quicklinks-footer .footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+
+.quicklinks-footer .footer-link {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.quicklinks-footer .footer-link:hover {
+  color: #40ffc9;
+}
+
+
+
+
+
+.contact-details {
+  width: 25%;
+  padding-top: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+
+}
+.info-contact-inner {
+  /* background-color: chartreuse; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+
+}
+.info-contact-inner svg{
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+.info-contact-inner a{
+
+  color: white;
+  text-decoration: none;
+   font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10px;
+  
+
+}

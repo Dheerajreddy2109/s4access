@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.extra-big-heading-text-white {
+  color: white;
+  font-family: "barlow", monospace;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+.extra-big-heading-text-black {
+  color: rgb(0, 0, 0);
+  font-family: "barlow", monospace;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+.big-heading-text-white {
+  color: white;
+  font-family: "barlow", monospace;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+.big-heading-text-black {
+  color: rgb(0, 0, 0);
+  font-family: "barlow", monospace;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+.sub-heading-text-black {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1.3em;
+}
+.sub-heading-text-white {
+  color: rgb(255, 255, 255);
+  font-family: "barlow", monospace;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.sub-big-heading-text-black {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+.sub-big-heading-text-white {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+.text-white {
+  color: rgb(255, 255, 255);
+  font-family: "barlow", monospace;
+  font-size: 16px;
+  line-height: 1.3em;
+}
+.text-black {
+  color: rgb(0, 0, 0);
+  font-family: "barlow", monospace;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 1.3em;
+}
+.small-text-black {
+  color: rgb(0, 0, 0);
+  font-family: "barlow", monospace;
+  font-size: 14px;
+}
+.small-text-white {
+  color: rgb(255, 255, 255);
+  font-family: "barlow", monospace;
+  font-size: 14px;
+  font-weight: 300;
+}
+.small-text-white a {
+  color: rgb(255, 255, 255);
+  font-family: "barlow", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.small-text-white strong{
+  color: rgb(255, 255, 255);
+  font-family: "barlow", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.extra-small-text-black {
+  color: rgb(0, 0, 0);
+  font-family: "barlow", monospace;
+  font-size: 12px;
+}
+.extra-small-text-white {
+  color: rgb(255, 255, 255);
+  font-family: "barlow", monospace;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.big-number-text-black {
+  color: rgb(0, 0, 0);
+  font-family: "barlow", monospace;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+
+
+.button-green {
+  width: fit-content;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  width: fit-content;
+  background-color: #40ffc9;
+  border: #40ffc9 2px solid;
+  color: #003377;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: "Barlow", monospace;
+  transition: background-color 0.3s;
+}
+.button-green span:last-child {
+  rotate: 40deg;
+  margin-left: 8px;
+}
+
+.button-green:hover {
+  background-color: transparent ;
+  color: #40ffc9;
+}
+
+.border-button {
+  padding: 16px 20px;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: #40ffc9;
+  border: 1px solid #40ffc9;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: "Roboto Mono", sans-serif;
+  width: 110px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.border-button span:last-child {
+  rotate: 40deg;
+}
+.border-button span:last-child i {
+  color: #40ffc9;
+}
+
+/* read more button start  */
+.read-more-btn {
+  position: relative;
+  display: inline-block;
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: #40ffc9;
+  font-weight: 400;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  width: fit-content;
+}
+
+.read-more-btn .arrow-icon {
+  margin-left: 4px;
+  transition: transform 0.3s ease;
+}
+
+.read-more-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #40ffc9;
+  transition: width 0.3s ease;
+}
+
+.read-more-btn:hover::after {
+  width: 100%;
+}
+
+.read-more-btn:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* read more button End */
+
+/* read more button blue start  */
+.read-more-btn-blue {
+  position: relative;
+  display: inline-block;
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: #003377;
+  font-weight: 400;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  width: fit-content;
+}
+
+.read-more-btn-blue .arrow-icon {
+  margin-left: 4px;
+  transition: transform 0.3s ease;
+  color: #003377;
+}
+
+.read-more-btn-blue::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #003377;
+  transition: width 0.3s ease;
+}
+
+.read-more-btn-blue:hover::after {
+  width: 100%;
+}
+
+.read-more-btn-blue:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* read more button blue End  */
+
+.main-button-blue {
+  padding: 16px 20px;
+  background-color: #003377;
+  border: 2px solid #003377;
+  color: #40ffc9;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: "Roboto Mono", sans-serif;
+  width: 110px;
+  transition: 0.3s ease-in-out;
+}
+.main-button-blue:hover {
+  background-color: transparent;
+  color: #003377;
+}
+.main-button-blue span:last-child {
+  rotate: 40deg;
+}
+.main-button-blue span:last-child i {
+  color: #40ffc9;
+}
+.main-button-blue:hover span:last-child i {
+  color: #003377;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  z-index: 10000000000000;
+}
+@keyframes slideUpBg {
+  from {
+    background-color: transparent;
+    transform: translateY(-10px);
+  }
+  to {
+    background-color: #000000;
+    transform: translateY(0);
+  }
+}
+
+nav.scrolled {
+  animation: slideUpBg 0.5s ease forwards;
+}
+
+.logo {
+  position: relative;
+  width: 13%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Initial States */
+.star-logo {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.main-logo {
+  opacity: 0;
+  transform: translate(10%, -50%) scale(0); /* Starts from right */
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Hover States */
+.logo:hover .star-logo {
+  opacity: 0;
+  transform: translate(-400%, -50%) scale(0); /* Moves left & scales down */
+}
+
+.logo:hover .main-logo {
+  opacity: 1;
+  transform: translate(-62%, -50%) scale(1); /* Comes to center & scales up */
+}
+
+.nav-list {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* background-color: green; */
+}
+
+.nav-list ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+.nav-list ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+.nav-list ul a:hover {
+  border-bottom: 3px solid #40ffc9;
+  color: #40ffc9;
+}
+.nav-list a.active {
+  border-bottom: 3px solid #40ffc9;
+  color: #40ffc9;
+}
+
+.button-contact {
+  width: 20%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-contact a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #40ffc9;
+  color: black;
+  text-decoration: none;
+  border-radius: 2px;
+  font-family: "Barlow", monospace;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.button-contact a:hover {
+  background-color: #2d856c;
+  color: white;
+}
