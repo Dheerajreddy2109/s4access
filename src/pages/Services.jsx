@@ -1,13 +1,12 @@
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import '../css/App.css';
+import "../css/Services.css"
 
 function Services() {
   return (
     <div>
       <Header />
-      <h1>Services</h1>
-      <p>Learn about our services.</p>
+      
       <Footer />
     </div>
   );
