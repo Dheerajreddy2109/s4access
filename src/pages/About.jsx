@@ -329,6 +329,7 @@ We believe that this new era demands a new approach, new thinking and new soluti
 
         <a href="/" className="text-black">
         +358 40 558 9069
+        6301117473
 
         </a>
         <br />
