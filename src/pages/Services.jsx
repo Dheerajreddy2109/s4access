@@ -14,7 +14,8 @@ function Services() {
 
         <div className="services-hero-left">
            <p className="big-heading-text-white">
-      Specialist in SAP<br /> access management
+     Services designed to solve <br />
+SAP access management challenges
     </p>
     <p className="text-white">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br /> eiusmod tempor incididunt ut labore et dolore magna aliqua.
