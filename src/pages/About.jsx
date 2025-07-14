@@ -4,7 +4,7 @@ import Footer from '../components/Footer.jsx';
 import '../css/About.css';
 import star from '../assets/images/home-img/star-black.png'
 import team1 from '../assets/images/About-img/our-team/teammate-1.jpg'
-// import { ReactComponent as Logo } from '../assets/images/favic.svg';
+import WholeWebsiteIcon from '../components/WholeWebsiteIcon.jsx';
 import mapimg from '../assets/images/About-img/googlemap.png'
 
 function About() {

@@ -287,7 +287,6 @@ nav {
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
-  width: 100%;
   z-index: 10000000000000;
 }
 @keyframes slideUpBg {
@@ -307,7 +306,7 @@ nav.scrolled {
 
 .logo {
   position: relative;
-  width: 13%;
+  width: 14%;
   height: 100px;
   overflow: hidden;
 }

@@ -1,6 +1,7 @@
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import "../css/Services.css"
+import WholeWebsiteIcon from '../components/WholeWebsiteIcon.jsx';
 
 function Services() {
   return (
@@ -24,6 +25,8 @@ SAP access management challenges
         </div>
 
         <div className="services-hero-right">
+
+          {/* <WholeWebsiteIcon color={"red"}  /> */}
 
         </div>
 
