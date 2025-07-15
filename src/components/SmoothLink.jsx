@@ -1,55 +1,64 @@
-import { useEffect, useContext, useCallback } from 'react';
-import { LenisContext } from './LenisContext';
+import { useEffect, useCallback, useRef } from 'react';
 
-function SmoothLink({ to, children, ...props }) {
-  const lenis = useContext(LenisContext);
+function SmoothLink({ to = '#', children, ...props }) {
+  const anchorRef = useRef(null);
 
   const handleClick = useCallback(
     (e) => {
+      e.preventDefault(); // Prevent default jump
+      const lenis = window.lenis;
+      console.log('handleClick triggered for:', to, 'Lenis:', lenis);
       if (!lenis) {
-        console.warn('Lenis not available');
+        console.warn('Lenis not available for:', to);
         return;
       }
-      e.preventDefault(); // Prevent default jump
-      console.log('Scrolling to:', to);
       const targetId = to.substring(1); // Remove '#'
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         lenis.scrollTo(targetElement, {
           offset: 0, // Adjust for fixed header if needed
-          duration: 1.2,
+          duration: 1,
           easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smooth easing
         });
+       
       } else {
-        console.warn('Target element not found:', targetId);
+        console.warn('Target element not found:', targetId, 'Checking all IDs:', [...document.querySelectorAll('[id]')].map(el => el.id));
+        const fallbackElement = document.querySelector(`[id="${targetId}"]`);
+        if (fallbackElement) {
+          lenis.scrollTo(fallbackElement, { offset: 0, duration: 1.2, easing: (t) => t });
+          
+        } else {
+         
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
       }
     },
-    [lenis, to]
+    [to]
   );
 
   useEffect(() => {
-    if (!lenis) {
-      console.log('Lenis not yet available, skipping event listener setup');
-      return;
-    }
-    const anchor = document.querySelector(`a[href="${to}"]`);
+   
+    const anchor = anchorRef.current;
     if (anchor) {
-      console.log('Attaching click listener to:', to);
+     
       anchor.addEventListener('click', handleClick);
       return () => {
-        console.log('Removing click listener from:', to);
         anchor.removeEventListener('click', handleClick);
       };
     } else {
       console.warn('Anchor not found for:', to);
     }
-  }, [to, lenis, handleClick]);
+  }, [to, handleClick]);
 
   return (
-    <a href={to} {...props}>
+    <a ref={anchorRef} href={to} {...props} onClick={handleClick}>
       {children}
     </a>
   );
 }
+
+SmoothLink.defaultProps = {
+  to: '#',
+};
 
 export default SmoothLink;

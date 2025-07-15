@@ -1,3 +1,5 @@
+
+// import React, { useEffect } from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import "../css/Services.css"
@@ -6,6 +8,11 @@ import ServiceSection from '../components/ServiceSection.jsx';
 
 
 function Services() {
+
+
+
+
+
   return (
     <div>
       <Header />
@@ -48,6 +55,7 @@ SAP access management challenges
 
 {/* ServiceSection section start */}
 <ServiceSection />
+      
 {/* ServiceSection section End */}
 
 

@@ -72,5 +72,8 @@
     align-items: start;
     flex-direction: column;
     gap: 20px;
-    padding-top: 100px;
+    padding-top: 270px;
+}
+.active-link {
+  color: #0000FF; 
 }

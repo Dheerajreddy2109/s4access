@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SmoothLink from "../components/SmoothLink.jsx";
+import SmoothLink from '../components/SmoothLink';
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import '../css/Home.css';
@@ -75,7 +75,7 @@ function Home() {
             ))}
           </div>
         </div>
-        <a href="#go-down-section" className="go-down-arrow">
+        <SmoothLink to="#go-down-section" className="go-down-arrow">
           <svg
             id="fi_7242819"
             height="512"
@@ -86,7 +86,7 @@ function Home() {
           >
             <path d="m13.766 289.234a47 47 0 0 1 66.468-66.468l175.766 175.766 175.766-175.766a47 47 0 0 1 66.468 66.468l-209 209a47 47 0 0 1 -66.468 0zm209 0a47 47 0 0 0 66.468 0l209-209a47 47 0 0 0 -66.468-66.468l-175.766 175.766-175.766-175.766a47 47 0 0 0 -66.468 66.468z"></path>
           </svg>
-        </a>
+        </SmoothLink>
       </section>
       {/* carousle section End */}
 
