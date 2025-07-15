@@ -2,6 +2,8 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import "../css/Services.css"
 import WholeWebsiteIcon from '../components/WholeWebsiteIcon.jsx';
+import ServiceSection from '../components/ServiceSection.jsx';
+
 
 function Services() {
   return (
@@ -31,7 +33,25 @@ SAP access management challenges
         </div>
 
       </section>
+
+
       {/* services-page-hero-banner End */}
+
+
+
+
+
+
+
+
+
+
+{/* ServiceSection section start */}
+<ServiceSection />
+{/* ServiceSection section End */}
+
+
+
       
       <Footer />
     </div>

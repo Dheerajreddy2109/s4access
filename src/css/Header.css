@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
 }
+.green-bg-text-heading{
+   color: rgb(255, 255, 255);
+  font-family: "barlow", monospace;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  background-color: #2E3840;
+padding: 10px;
+}
 .extra-big-heading-text-white {
   color: white;
   font-family: "barlow", monospace;
@@ -32,7 +41,7 @@
 }
 .sub-heading-text-black {
   color: rgb(0, 0, 0);
-  font-family: "Roboto Mono", monospace;
+  font-family: "barlow", monospace;
   font-size: 20px;
   text-decoration: none;
   line-height: 1.3em;
@@ -46,14 +55,14 @@
 
 .sub-big-heading-text-black {
   color: rgb(0, 0, 0);
-  font-family: "Roboto Mono", monospace;
+  font-family:"barlow", monospace;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.3em;
 }
 .sub-big-heading-text-white {
   color: rgb(255, 255, 255);
-  font-family: "Roboto Mono", monospace;
+  font-family: "barlow", monospace;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.3em;

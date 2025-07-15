@@ -1,16 +1,16 @@
-.about-banner-section{
+.about-banner-section {
     height: 50vh;
     background-color: #2E3841;
     display: flex;
     align-items: center;
     justify-content: center;
-        text-align:center ;
-        padding: 100px 50px;
-        margin-top: -100px;
+    text-align: center;
+    padding: 100px 50px;
+    margin-top: -100px;
 
 }
 
-.about-image-section{
+.about-image-section {
     height: 60vh;
     background-color: #D9D9D9;
 }
@@ -23,7 +23,7 @@
 /* about-who-we-are-section start */
 
 
-.about-who-we-are-section{
+.about-who-we-are-section {
     /* background-color: red; */
     padding: 100px 50px;
     display: flex;
@@ -31,30 +31,36 @@
     align-items: start;
     justify-content: start;
 }
+
 .who-we-are-left-container {
     width: 30%;
-    padding-top: 17px ;
+    padding-top: 17px;
     /* background-color: green; */
 }
-.who-we-are-left-container img{
+
+.who-we-are-left-container img {
     width: 20px;
     height: auto;
-    
+
 }
-.who-we-are-left-container span{
+
+.who-we-are-left-container span {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
     gap: 5px;
 }
-.who-we-are-left-container span img{
+
+.who-we-are-left-container span img {
     margin-bottom: -8px;
 }
-.who-we-are-right-container{
+
+.who-we-are-right-container {
     width: 70%;
     /* background-color: green; */
 }
+
 /* about-who-we-are-section End */
 
 
@@ -63,72 +69,74 @@
 
 
 /* our team section start  */
-.our-team-section{
+.our-team-section {
     padding: 100px 50px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-     transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 
 }
-.inner-about-out-team{
+
+.inner-about-out-team {
     height: 100%;
     display: flex;
     justify-content: space-between;
     gap: 50px;
-     transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 
 
 }
+
 .about-team-container {
-  background-color: #E6E6E6;
-  height: 100%;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: all 0.4s ease-in-out;
-  border: 1px solid transparent;
-  overflow: hidden;
+    background-color: #E6E6E6;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid transparent;
+    overflow: hidden;
 }
 
 .team-wrapper:hover .about-team-container {
-  flex: 1; /* Shrinks everyone to equal small size */
+    flex: 1;
 }
 
 .about-team-container:hover {
-  flex: 1.15; /* Grows hovered one */
-  border-color: black;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex: 1.15;
+    border-color: black;
 }
 
 .our-team-img-container {
-  height: 60vh;
-  position: relative;
-  overflow: hidden;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .our-team-img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
 }
 
 
 
-.ourteam-container-contacts{
+.ourteam-container-contacts {
     padding: 30px;
-    display: flex ;
+    display: flex;
     justify-content: start;
     align-items: start;
     flex-direction: column;
 }
-.ourteam-container-contacts .text-black:last-child{
+
+.ourteam-container-contacts .text-black:last-child {
     margin-top: -10px;
 }
 
-.our-team-names{
+.our-team-names {
     position: absolute;
     top: 85%;
     left: 20px;
@@ -140,48 +148,64 @@
     height: 35px;
 
 }
-.team-name-text{
+
+.ourteam-logo {
+    width: 30px;
+    height: 30px;
+    /* background-color: white; */
+    right: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+.team-name-text {
     color: white;
     font-family: "barlow", monospace;
-  font-size: 14px;
-  font-weight: 500;
+    font-size: 14px;
+    font-weight: 500;
 }
-.team-ceo-text{
+
+.team-ceo-text {
     color: white;
     font-family: "barlow", monospace;
-  font-size: 10px;
-  font-weight: 300;
+    font-size: 10px;
+    font-weight: 300;
 }
+
 /* our team section End */
 
 
 
 /* about-contact-us-section start */
-.about-contact-us-section{
+.about-contact-us-section {
     padding: 100px 50px;
     background-color: #2E3840;
 }
-.about-contact-us-section .text-white{
+
+.about-contact-us-section .text-white {
     margin-top: 50px;
 }
+
 /* about-contact-us-section End */
 
 
 
 
 /* about-contact-us-dark-section start */
-.about-contact-us-dark-section{
+.about-contact-us-dark-section {
     padding: 100px 50px;
     background-color: black;
 }
-.about-contact-us-dark-container{
+
+.about-contact-us-dark-container {
     display: flex;
     align-items: start;
     justify-content: space-between;
     flex-direction: row;
     gap: 50px;
 }
-.about-contact-us-dark-inner-container{
+
+.about-contact-us-dark-inner-container {
     /* background-color: red; */
     width: 20%;
     padding-left: 30px;
@@ -193,13 +217,14 @@
     gap: 80px;
     height: 45vh;
 }
+
 /* about-contact-us-dark-section End */
 
 
 
 
 /* about-map-section start */
-.about-map-section{
+.about-map-section {
     padding: 100px 0px 100px 50px;
     background-color: white;
     flex-direction: row;
@@ -207,19 +232,22 @@
     align-items: center;
     justify-content: space-between;
 }
-.about-map-centainer-left{
+
+.about-map-centainer-left {
     width: 35%;
     /* background-color: green; */
-      display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-.about-map-centainer-right{
+
+.about-map-centainer-right {
     width: 50%;
     /* background-color: red; */
     display: flex;
     align-items: end;
     justify-content: end;
 }
+
 /* about-map-section End */

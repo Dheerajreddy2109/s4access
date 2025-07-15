@@ -29,3 +29,48 @@
     background-size: contain;
 
 }
+.our-Service-Section{
+    padding: 100px 50px;
+    background-color: white;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 100px;
+
+}
+.our-Service-Section-left-container-sticky{
+    width: 40%;
+       position: sticky;
+       top: 130px;
+       left: 50px;
+    /* background-color: aqua; */
+   
+}
+.our-Service-left-container-green{
+    margin-top: 30px;
+     display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+ 
+
+}
+.our-Service-Section-right-container{
+    width: 40%;
+    background-color: #E0FFFF;
+    /* height: 200vh; */
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+
+
+}
+.scrolling-container-our-services{
+    /* background-color: black; */
+     display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+}

@@ -1,5 +1,6 @@
 import Header from '../components/Header.jsx';
 // import { useState } from 'react';
+import React from 'react';
 import Footer from '../components/Footer.jsx';
 import '../css/About.css';
 import star from '../assets/images/home-img/star-black.png'
@@ -8,6 +9,13 @@ import WholeWebsiteIcon from '../components/WholeWebsiteIcon.jsx';
 import mapimg from '../assets/images/About-img/googlemap.png'
 
 function About() {
+
+
+  const [color1, setColor1] = React.useState('white');
+  const [color2, setColor2] = React.useState('white');
+  const [color3, setColor3] = React.useState('white');
+  const [color4, setColor4] = React.useState('white');
+
   return (
     <div>
       <Header />
@@ -168,9 +176,20 @@ We believe that this new era demands a new approach, new thinking and new soluti
 
 
 
-    <div className="about-team-container">
+    <div
+     className="about-team-container"
+      onMouseEnter={() => setColor1('#40FFC9')}
+          onMouseLeave={() => setColor1('white')}
+        >
       
       <div className="our-team-img-container">
+
+
+        
+        <div className="ourteam-logo">
+               <WholeWebsiteIcon color={color1} />
+        
+        </div>
 
         <img src={team1} alt="" />
 
@@ -185,9 +204,6 @@ We believe that this new era demands a new approach, new thinking and new soluti
         </div>
 
 
-        <div className="ourteam-logo">
-         {/* <Logo /> */}
-        </div>
 
 
       </div>
@@ -211,9 +227,20 @@ We believe that this new era demands a new approach, new thinking and new soluti
 
 
 
-   <div className="about-team-container">
+<div
+     className="about-team-container"
+      onMouseEnter={() => setColor2('#40FFC9')}
+          onMouseLeave={() => setColor2('white')}
+        >
       
       <div className="our-team-img-container">
+
+
+        
+        <div className="ourteam-logo">
+               <WholeWebsiteIcon color={color2} />
+        
+        </div>
 
         <img src={team1} alt="" />
 
@@ -228,53 +255,6 @@ We believe that this new era demands a new approach, new thinking and new soluti
         </div>
 
 
-        <div className="ourteam-logo">
-         {/* <Logo /> */}
-        </div>
-
-
-      </div>
-      <div className="ourteam-container-contacts">
-
-
-        <a href="/" className="text-black">
-        +358 40 558 9069
-
-        </a>
-        <br />
-        <a href="/" className="text-black">
-        matti.halonen@s4access.com
-
-        </a>
-
-      </div>
-
-    </div>
-
-
-
-
-
-<div className="about-team-container">
-      
-      <div className="our-team-img-container">
-
-        <img src={team1} alt="" />
-
-
-        <div className="our-team-names">
-
-          <p className='team-name-text'>lorem ipsum</p>
-          <p className='team-ceo-text'>Ceo</p>
-
-
-
-        </div>
-
-
-        <div className="ourteam-logo">
-         {/* <Logo /> */}
-        </div>
 
 
       </div>
@@ -299,11 +279,20 @@ We believe that this new era demands a new approach, new thinking and new soluti
 
 
 
-
-
-<div className="about-team-container">
+<div
+     className="about-team-container"
+      onMouseEnter={() => setColor3('#40FFC9')}
+          onMouseLeave={() => setColor3('white')}
+        >
       
       <div className="our-team-img-container">
+
+
+        
+        <div className="ourteam-logo">
+               <WholeWebsiteIcon color={color3} />
+        
+        </div>
 
         <img src={team1} alt="" />
 
@@ -318,9 +307,6 @@ We believe that this new era demands a new approach, new thinking and new soluti
         </div>
 
 
-        <div className="ourteam-logo">
-         {/* <Logo /> */}
-        </div>
 
 
       </div>
@@ -329,17 +315,81 @@ We believe that this new era demands a new approach, new thinking and new soluti
 
         <a href="/" className="text-black">
         +358 40 558 9069
-        6301117473
 
         </a>
         <br />
         <a href="/" className="text-black">
         matti.halonen@s4access.com
+
         </a>
 
       </div>
 
     </div>
+
+
+
+
+
+<div
+     className="about-team-container"
+      onMouseEnter={() => setColor4('#40FFC9')}
+          onMouseLeave={() => setColor4('white')}
+        >
+      
+      <div className="our-team-img-container">
+
+
+        
+        <div className="ourteam-logo">
+               <WholeWebsiteIcon color={color4} />
+        
+        </div>
+
+        <img src={team1} alt="" />
+
+
+        <div className="our-team-names">
+
+          <p className='team-name-text'>lorem ipsum</p>
+          <p className='team-ceo-text'>Ceo</p>
+
+
+
+        </div>
+
+
+
+
+      </div>
+      <div className="ourteam-container-contacts">
+
+
+        <a href="/" className="text-black">
+        +358 40 558 9069
+
+        </a>
+        <br />
+        <a href="/" className="text-black">
+        matti.halonen@s4access.com
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+ 
+
+
+
+
+
 
 
 
