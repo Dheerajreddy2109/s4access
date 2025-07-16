@@ -8,6 +8,18 @@ import CustomerSuccess from './pages/Customer-success.jsx';
 import Insights from './pages/Insights.jsx';
 import Services from './pages/Services.jsx';
 import Lenis from '@studio-freight/lenis';
+import S4AccessArchitectureDesign from './pages/S4AccessArchitectureDesign.jsx';
+import S4AccessProjects from './pages/S4AccessProjects.jsx';
+import SAPAccessSecurityConsulting from './pages/SAPAccessSecurityConsulting.jsx';
+import SAPAccessManagementService from './pages/SAPAccessManagementService.jsx';
+import SAPAuthorisationConceptOwnerService from './pages/SAPAuthorisationConceptOwnerService.jsx';
+import SAPAccessReview from './pages/SAPAccessReview.jsx';
+import SAPLicenseCompliance from './pages/SAPLicenseCompliance.jsx';
+import SAPAuthorisationConceptDesign from './pages/SAPAuthorisationConceptDesign.jsx';
+import SAPSoDManagement from './pages/SAPSoDManagement.jsx';
+import S4FFEmergencyUserAutomation from './pages/S4FFEmergencyUserAutomation.jsx';
+import SAPGRCAccessControlServices from './pages/SAPGRCAccessControlServices.jsx';
+import SAPAuthorisationRedesign from './pages/SAPAuthorisationRedesign.jsx';
 
 console.log('Main.jsx loaded'); // Test log
 
@@ -43,6 +55,18 @@ createRoot(document.getElementById('root')).render(
         <Route path="/customer-success" element={<CustomerSuccess />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/s4accessarchitecturedesign" element={<S4AccessArchitectureDesign />} />
+        <Route path="/s4accessprojects" element={<S4AccessProjects />} />
+        <Route path="/sapaccesssecurityconsulting" element={<SAPAccessSecurityConsulting />} />
+        <Route path="/sapaccessmanagementservice" element={<SAPAccessManagementService />} />
+        <Route path="/sapauthorisationconceptownerservice" element={<SAPAuthorisationConceptOwnerService />} />
+        <Route path="/sapaccessreview" element={<SAPAccessReview />} />
+        <Route path="/saplicensecompliance" element={<SAPLicenseCompliance />} />
+        <Route path="/sapauthorisationconceptdesign" element={<SAPAuthorisationConceptDesign />} />
+        <Route path="/sapsodmanagement" element={<SAPSoDManagement />} />
+        <Route path="/s4ffemergencyuserautomation" element={<S4FFEmergencyUserAutomation />} />
+        <Route path="/sapgrcaccesscontrolservices" element={<SAPGRCAccessControlServices />} />
+        <Route path="/sapauthorisationredesign" element={<SAPAuthorisationRedesign />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

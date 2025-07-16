@@ -3,9 +3,11 @@ import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/images/mainlogo.png';
 import fav from '../assets/images/favic.svg';
 import '../css/Header.css';
+import MegaMenu from './MegaMenu.jsx';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showMegaMenu, setShowMegaMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,13 +45,17 @@ function Header() {
               About
             </NavLink>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => setShowMegaMenu(true)}
+            onMouseLeave={() => setShowMegaMenu(false)}
+          >
             <NavLink
               to="/services"
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
               Services
             </NavLink>
+            <MegaMenu show={showMegaMenu} />
           </li>
           <li>
             <NavLink
