@@ -1,13 +1,47 @@
 import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { LenisContext } from "../components/LenisContext";
+import Popup from '../components/popup/Popup.jsx';
 import SmoothLink from '../components/SmoothLink';
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import CustomerSuccess from "../components/CustomerSuccess.jsx";
 import '../css/Home.css';
-import banner1 from '../assets/images/home-img/home-bgimg.jpg'
-// import ctaImg from '../assets/images/home-img/cta-bg.jpg'
+import banner1 from '../assets/images/home-img/home-bgimg.jpg';
 
 function Home() {
+  const lenis = useContext(LenisContext);
+  // Popup handlers
+  const handleViewMoreClick = (e) => {
+    e.preventDefault();
+    setPopupContent({
+      image: banner1,
+      category: 'SAP S/4',
+      title: 'Customer Success Story',
+      description: 'Detailed story about SAP S/4 implementation and results.'
+    });
+    setPopupOpen(true);
+    if (lenis && typeof lenis.stop === 'function') {
+      lenis.stop();
+    }
+  };
+
+  const handleReadMoreClick = (e) => {
+    e.preventDefault();
+    setPopupContent({
+      image: banner1,
+      category: 'SAP S/4',
+      title: 'How we Made This',
+      description: 'In-depth explanation of the process and achievements.'
+    });
+    setPopupOpen(true);
+    if (lenis && typeof lenis.stop === 'function') {
+      lenis.stop();
+    }
+  };
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [popupOpen, setPopupOpen] = useState(false);
+  const [popupContent, setPopupContent] = useState({});
   const slides = [
     {
       image: banner1,
@@ -170,7 +204,29 @@ function Home() {
           <div className="inner-service-container">
             <div>
               <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">SAP S/4</p>
+              <p className="sub-heading-text-white">S/4 Access architecture design</p>
+              <p className="small-text-white">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                eius in molestiae reprehenderit quos laudantium praesentium
+                doloremque perferendis veritatis eos?
+              </p>
+            </div>
+
+            <div>
+              <a href="#" className="read-more-btn">
+                Read More <i className="bi bi-arrow-right arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+
+
+          
+
+          <div className="inner-service-container">
+            <div>
+              <img src="./src/assets/images/home-img/s45.png" alt="" />
+              <p className="sub-heading-text-white">S/4 Access projects <br /><br /></p>
+      
               <p className="small-text-white">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
                 eius in molestiae reprehenderit quos laudantium praesentium
@@ -188,7 +244,27 @@ function Home() {
           <div className="inner-service-container">
             <div>
               <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">SAP S/4</p>
+              <p className="sub-heading-text-white">SAP access / security consulting</p>
+              <p className="small-text-white">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                eius in molestiae reprehenderit quos laudantium praesentium
+                doloremque perferendis veritatis eos?
+              </p>
+            </div>
+
+            <div>
+              <a href="#" className="read-more-btn">
+                Read More <i className="bi bi-arrow-right arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+
+
+
+          <div className="inner-service-container">
+            <div>
+              <img src="./src/assets/images/home-img/s45.png" alt="" />
+              <p className="sub-heading-text-white">SAP Authorisation concept owner service</p>
               <p className="small-text-white">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
                 eius in molestiae reprehenderit quos laudantium praesentium
@@ -206,43 +282,7 @@ function Home() {
           <div className="inner-service-container">
             <div>
               <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">SAP S/4</p>
-              <p className="small-text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius in molestiae reprehenderit quos laudantium praesentium
-                doloremque perferendis veritatis eos?
-              </p>
-            </div>
-
-            <div>
-              <a href="#" className="read-more-btn">
-                Read More <i className="bi bi-arrow-right arrow-icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <div className="inner-service-container">
-            <div>
-              <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">SAP S/4</p>
-              <p className="small-text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius in molestiae reprehenderit quos laudantium praesentium
-                doloremque perferendis veritatis eos?
-              </p>
-            </div>
-
-            <div>
-              <a href="#" className="read-more-btn">
-                Read More <i className="bi bi-arrow-right arrow-icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <div className="inner-service-container">
-            <div>
-              <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">SAP S/4</p>
+              <p className="sub-heading-text-white">SAP / Emergency user automation</p>
               <p className="small-text-white">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
                 eius in molestiae reprehenderit quos laudantium praesentium
@@ -274,88 +314,7 @@ function Home() {
 
 
       {/* Customer success stories section start */}
-      <section className="Customer-success-stories-section">
-        <div>
-          <p className="big-heading-text-black">Customer success stories</p>
-        </div>
-
-        <div className="coustomer-success-container">
-          <div className="innercoustomer-success-container-left">
-            <div>
-              <p className="sub-heading-text-white">SAP S/4</p>
-              <p className="small-text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius in molestiae reprehenderit quos laudantium praesentium
-                doloremque perferendis veritatis eos?
-              </p>
-            </div>
-
-            <div>
-              <a href="#" className="read-more-btn">
-                Read More <i className="bi bi-arrow-right arrow-icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <div className="innercoustomer-success-container-left">
-            <div>
-              <p className="sub-heading-text-white">SAP S/4</p>
-              <p className="small-text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius in molestiae reprehenderit quos laudantium praesentium
-                doloremque perferendis veritatis eos?
-              </p>
-            </div>
-
-            <div>
-              <a href="#" className="read-more-btn">
-                Read More <i className="bi bi-arrow-right arrow-icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <div className="innercoustomer-success-container-right">
-            <div className="innercoustomer-heading-cont">
-              <p className="sub-heading-text-white">SAP S/4</p>
-               <a href="#" className="read-more-btn">
-                  View More <i className="bi bi-arrow-right arrow-icon"></i>
-                </a>
-            </div>
-
-            <div className="inner-scroll-container">
-              <div className="scroll-item">
-                <p className="text-white">How we Made This..</p>
-
-                <a href="#" className="read-more-btn">
-                  Read More <i className="bi bi-arrow-right arrow-icon"></i>
-                </a>
-              </div>
-              <div className="scroll-item">
-                <p className="text-white">How we Made This..</p>
-
-                <a href="#" className="read-more-btn">
-                  Read More <i className="bi bi-arrow-right arrow-icon"></i>
-                </a>
-              </div>
-              <div className="scroll-item">
-                <p className="text-white">How we Made This..</p>
-
-                <a href="#" className="read-more-btn">
-                  Read More <i className="bi bi-arrow-right arrow-icon"></i>
-                </a>
-              </div>
-              <div className="scroll-item">
-                <p className="text-white">How we Made This..</p>
-
-                <a href="#" className="read-more-btn">
-                  Read More <i className="bi bi-arrow-right arrow-icon"></i>
-                </a>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </section>
+      <CustomerSuccess onViewMore={handleViewMoreClick} onReadMore={handleReadMoreClick} />
       {/* Customer success stories section End */}
 
 
@@ -590,6 +549,19 @@ Find out more
 
 {/* last-cta-section End  */}
       <Footer />
+      <Popup
+        open={popupOpen}
+        image={popupContent.image}
+        category={popupContent.category}
+        title={popupContent.title}
+        description={popupContent.description}
+        onClose={() => {
+          setPopupOpen(false);
+          if (lenis && typeof lenis.start === 'function') {
+            lenis.start();
+          }
+        }}
+      />
     </div>
   );
 }

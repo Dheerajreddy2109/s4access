@@ -1,4 +1,5 @@
 import { StrictMode } from 'react';
+import LenisProvider from './components/LenisProvider';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../src/pages/Home.jsx';
@@ -47,27 +48,29 @@ requestAnimationFrame(raf);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/customer-success" element={<CustomerSuccess />} />
-        <Route path="/insights" element={<Insights />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/s4accessarchitecturedesign" element={<S4AccessArchitectureDesign />} />
-        <Route path="/s4accessprojects" element={<S4AccessProjects />} />
-        <Route path="/sapaccesssecurityconsulting" element={<SAPAccessSecurityConsulting />} />
-        <Route path="/sapaccessmanagementservice" element={<SAPAccessManagementService />} />
-        <Route path="/sapauthorisationconceptownerservice" element={<SAPAuthorisationConceptOwnerService />} />
-        <Route path="/sapaccessreview" element={<SAPAccessReview />} />
-        <Route path="/saplicensecompliance" element={<SAPLicenseCompliance />} />
-        <Route path="/sapauthorisationconceptdesign" element={<SAPAuthorisationConceptDesign />} />
-        <Route path="/sapsodmanagement" element={<SAPSoDManagement />} />
-        <Route path="/s4ffemergencyuserautomation" element={<S4FFEmergencyUserAutomation />} />
-        <Route path="/sapgrcaccesscontrolservices" element={<SAPGRCAccessControlServices />} />
-        <Route path="/sapauthorisationredesign" element={<SAPAuthorisationRedesign />} />
-      </Routes>
-    </BrowserRouter>
+    <LenisProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/customer-success" element={<CustomerSuccess />} />
+          <Route path="/insights" element={<Insights />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/s4accessarchitecturedesign" element={<S4AccessArchitectureDesign />} />
+          <Route path="/s4accessprojects" element={<S4AccessProjects />} />
+          <Route path="/sapaccesssecurityconsulting" element={<SAPAccessSecurityConsulting />} />
+          <Route path="/sapaccessmanagementservice" element={<SAPAccessManagementService />} />
+          <Route path="/sapauthorisationconceptownerservice" element={<SAPAuthorisationConceptOwnerService />} />
+          <Route path="/sapaccessreview" element={<SAPAccessReview />} />
+          <Route path="/saplicensecompliance" element={<SAPLicenseCompliance />} />
+          <Route path="/sapauthorisationconceptdesign" element={<SAPAuthorisationConceptDesign />} />
+          <Route path="/sapsodmanagement" element={<SAPSoDManagement />} />
+          <Route path="/s4ffemergencyuserautomation" element={<S4FFEmergencyUserAutomation />} />
+          <Route path="/sapgrcaccesscontrolservices" element={<SAPGRCAccessControlServices />} />
+          <Route path="/sapauthorisationredesign" element={<SAPAuthorisationRedesign />} />
+        </Routes>
+      </BrowserRouter>
+    </LenisProvider>
   </StrictMode>
 );
