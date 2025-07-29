@@ -1,66 +1,69 @@
 import React from "react";
 import "../css/Home.css";
 
-const CustomerSuccess = ({ onViewMore, onReadMore }) => (
+const CustomerSuccess = ({ onReadMore, onReadMoretwo }) => (
   <section className="Customer-success-stories-section">
     <div>
       <p className="big-heading-text-black">Customer success stories</p>
     </div>
     <div className="coustomer-success-container">
       <div className="innercoustomer-success-container-left">
-        <div>
-          <p className="sub-heading-text-white">SAP S/4</p>
+        <div className="innercoustomer-heading-cont">
+          <p className="sub-heading-text-white">S4 Transition analysis  <br /><br /></p>
           <p className="small-text-white">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eius in molestiae reprehenderit quos laudantium praesentium doloremque perferendis veritatis eos?
+            A multinational material handling solutions company was preparing for their S4-upgrade project. They needed to plan ahead for the Fiori introduction as well as the authorization work in a setup where the aim was to perform a technical upgrade and only implement some new mandatory features.
           </p>
         </div>
         <div>
-          <a href="#" className="read-more-btn">
+          <a href="#" className="read-more-btn" onClick={onReadMore}>
             Read More <i className="bi bi-arrow-right arrow-icon"></i>
           </a>
         </div>
       </div>
       <div className="innercoustomer-success-container-left">
-        <div>
-          <p className="sub-heading-text-white">SAP S/4</p>
+        <div className="innercoustomer-heading-cont">
+          <p className="sub-heading-text-white">Scandinavian Forest & Paper company</p>
           <p className="small-text-white">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eius in molestiae reprehenderit quos laudantium praesentium doloremque perferendis veritatis eos?
+            Customer began implementing SAP S/4 with a large international service integrator. An external audit identified basic SAP access management issues, raising top management concerns. s4access was hired to conduct a detailed review to assess the severity and propose actionable solutions.
           </p>
         </div>
         <div>
-          <a href="#" className="read-more-btn">
+          <a href="#" className="read-more-btn" onClick={onReadMoretwo}>
             Read More <i className="bi bi-arrow-right arrow-icon"></i>
           </a>
         </div>
       </div>
       <div className="innercoustomer-success-container-right">
         <div className="innercoustomer-heading-cont">
-          <p className="sub-heading-text-white">SAP S/4</p>
-          <a href="#" className="read-more-btn" onClick={onViewMore}>
-            View More <i className="bi bi-arrow-right arrow-icon"></i>
-          </a>
+          <p className="sub-heading-text-white">Coming Soon...</p>
         </div>
         <div className="inner-scroll-container">
           <div className="scroll-item">
-            <p className="text-white">How we Made This..</p>
-            <a href="#" className="read-more-btn" onClick={onReadMore}>
-              Read More <i className="bi bi-arrow-right arrow-icon"></i>
-            </a>
-          </div>
-          <div className="scroll-item">
-            <p className="text-white">How we Made This..</p>
+            <p className="text-white">Coming Soon...</p>
             <a href="#" className="read-more-btn">
               Read More <i className="bi bi-arrow-right arrow-icon"></i>
             </a>
           </div>
           <div className="scroll-item">
-            <p className="text-white">How we Made This..</p>
+            <p className="text-white">Coming Soon...</p>
+            <a href="#" className="read-more-btn" >
+              Read More <i className="bi bi-arrow-right arrow-icon"></i>
+            </a>
+          </div>
+          <div className="scroll-item">
+            <p className="text-white">Coming Soon...</p>
             <a href="#" className="read-more-btn">
               Read More <i className="bi bi-arrow-right arrow-icon"></i>
             </a>
           </div>
           <div className="scroll-item">
-            <p className="text-white">How we Made This..</p>
+            <p className="text-white">Coming Soon...</p>
+            <a href="#" className="read-more-btn">
+              Read More <i className="bi bi-arrow-right arrow-icon"></i>
+            </a>
+          </div>
+          <div className="scroll-item">
+            <p className="text-white">Coming Soon...</p>
             <a href="#" className="read-more-btn">
               Read More <i className="bi bi-arrow-right arrow-icon"></i>
             </a>

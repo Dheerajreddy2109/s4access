@@ -8,6 +8,7 @@ import Contact from './pages/Contact.jsx';
 import CustomerSuccess from './pages/Customer-success.jsx';
 import Insights from './pages/Insights.jsx';
 import Services from './pages/Services.jsx';
+import Careers from './pages/Careers.jsx';
 import Lenis from '@studio-freight/lenis';
 import S4AccessArchitectureDesign from './pages/S4AccessArchitectureDesign.jsx';
 import S4AccessProjects from './pages/S4AccessProjects.jsx';
@@ -58,6 +59,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/insights" element={<Insights />} />
           <Route path="/services" element={<Services />} />
           <Route path="/s4accessarchitecturedesign" element={<S4AccessArchitectureDesign />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/s4accessprojects" element={<S4AccessProjects />} />
           <Route path="/sapaccesssecurityconsulting" element={<SAPAccessSecurityConsulting />} />
           <Route path="/sapaccessmanagementservice" element={<SAPAccessManagementService />} />

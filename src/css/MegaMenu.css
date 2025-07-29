@@ -1,0 +1,102 @@
+.megamenu-services-grid {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  /* background-color: azure; */
+  width: 80%;
+}
+.megamenu-title-container{
+    width: 25%;
+    /* background-color: #40FFC9; */
+    display: flex;
+    align-items: end;
+}
+  
+.megamenu-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.megamenu-row-gap {
+  margin-bottom: 1rem;
+}
+
+.megamenu-grid-item {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1rem;
+  background: #40FFC9;
+  border-radius: 8px;
+}
+
+.megamenu-icon-large {
+  font-size: 1.5rem;
+  color: #111;
+}
+
+.megamenu-link,
+.megamenu-link:hover,
+.megamenu-link:active,
+.megamenu-link:focus,
+.megamenu-link:visited {
+  text-decoration: none !important;
+  color: #111 !important;
+}
+
+
+/* MegaMenu styles moved from Header.css */
+.megamenu {
+  display: none;
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  width: 94%;
+  height: 330px;
+  background-color: #2E3840 !important;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.18);
+  /* border-radius: 0 0 24px 24px; */
+  z-index: 100;
+  padding: 40px 48px 32px 48px;
+  animation: fadeIn 0.2s;
+}
+.megamenu.show {
+  display: block;
+}
+.megamenu-content {
+  display: flex;
+  flex-direction: row;
+  align-items: self-end;
+  height: 100%;
+  width: 100%;
+}
+.megamenu-title {
+  font-family: "barlow", monospace;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 32px;
+}
+.megamenu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+}
+
+/* MegaMenu hover logic: keep menu open when hovering header or MegaMenu */
+.header:hover .megamenu,
+.megamenu:hover {
+  display: block !important;
+}
+
+
+.megamenu-arrow{
+  display: inline-block;
+  margin-left: 10px;
+  transform: rotate(-45deg);
+
+}

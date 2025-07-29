@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import { FaProjectDiagram, FaCogs, FaUserShield, FaUsersCog, FaUserTie, FaClipboardCheck, FaIdBadge, FaDraftingCompass, FaBalanceScale, FaUserSecret, FaShieldAlt, FaSyncAlt } from "react-icons/fa";
+import { FaProjectDiagram, FaCogs, FaUserShield, FaUsersCog, FaUserTie, FaClipboardCheck, FaIdBadge, FaDraftingCompass, FaBalanceScale, FaUserSecret, FaShieldAlt, FaSyncAlt, FaArrowRight } from "react-icons/fa";
 import "../css/Header.css";
+import "../css/MegaMenu.css";
 
 const services = [
   { name: "S/4 Access architecture design", icon: <FaProjectDiagram />, link: "/s4accessarchitecturedesign" },
@@ -18,20 +19,52 @@ const services = [
   { name: "SAP Authorisation redesign", icon: <FaSyncAlt />, link: "/sapauthorisationredesign" }
 ];
 
-const MegaMenu = ({ show }) => (
-  <div className={`megamenu${show ? " show" : ""}`}>
-    <div className="megamenu-content">
-      <p className="megamenu-title">Our Services</p>
-      <ul className="megamenu-list">
-        {services.map((service, idx) => (
-          <li key={idx} className="megamenu-list-item">
-            <span className="megamenu-icon">{service.icon}</span>
-            <Link to={service.link}>{service.name}</Link>
-          </li>
-        ))}
-      </ul>
+const MegaMenu = ({ show, setShow }) => {
+  // Split services into 4 rows, 3 columns each
+  const rows = [];
+  for (let i = 0; i < 4; i++) {
+    rows.push(services.slice(i * 3, i * 3 + 3));
+  }
+  const hideTimeout = useRef();
+  const handleMouseEnter = () => {
+    clearTimeout(hideTimeout.current);
+    setShow(true);
+  };
+  const handleMouseLeave = () => {
+    hideTimeout.current = setTimeout(() => setShow(false), 200);
+  };
+  return (
+    <div
+      className={`megamenu${show ? " show" : ""} megamenu-fullwidth`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="megamenu-content megamenu-flex">
+        {/* Left: Title at bottom */}
+        <div className="megamenu-title-container">
+          <p className="megamenu-title megamenu-title-large">
+            Our Services
+            <span className="megamenu-arrow">
+              <FaArrowRight />
+            </span>
+          </p>
+        </div>
+        {/* Right: Services grid */}
+        <div className="megamenu-services-grid">
+          {rows.map((row, rowIdx) => (
+            <div key={rowIdx} className={`megamenu-row${rowIdx < 4 ? " megamenu-row-gap" : ""}`}>
+              {row.map((service, colIdx) => (
+                <div key={colIdx} className="megamenu-list-item megamenu-grid-item">
+                  <span className="megamenu-icon megamenu-icon-large">{service.icon}</span>
+                  <Link to={service.link} className="megamenu-link">{service.name}</Link>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default MegaMenu;

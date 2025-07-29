@@ -344,9 +344,18 @@
 }
 .scroll-item {
   display: flex;
-  padding: 20px 25px 10px 25px;
+  padding: 15px 25px 15px 25px;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 2px solid white;
+}
+.scroll-item:last-child {
+  border-bottom: none;
+}
+.innercoustomer-heading-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 /* Customer-success-stories-section End */
 

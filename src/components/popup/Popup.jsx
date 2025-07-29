@@ -2,7 +2,20 @@ import React, { useEffect } from "react";
 import "../../css/Popup.css";
 
 
-const Popup = ({ open, onClose, image, category, title, description }) => {
+const Popup = ({
+  open,
+  onClose,
+  image = '',
+  category = '',
+  title = '',
+  description = '',
+  image2 = '',
+  image3 = '',
+  description2 = '',
+  description3 = '',
+  title2 = '',
+  title3 = ''
+}) => {
   // Prevent mouse wheel from scrolling the body when popup is open
   const handleWheel = (e) => {
     e.stopPropagation();
@@ -41,21 +54,26 @@ const Popup = ({ open, onClose, image, category, title, description }) => {
           {description && (
             <p className="text-black">{description}</p>
           )}
-          {/* Case study extra paragraph and image */}
-          <div className="case-study-extra">
-            <p className="text-black">
-              This case study highlights the key challenges, solutions, and outcomes of our SAP S/4 implementation. Our team leveraged best practices and innovative approaches to deliver measurable results for our client.
-            </p>
-            <img src={image} alt="Case Study" className="case-study-image" style={{ width: '100%', marginTop: '16px', borderRadius: '8px' }} />
-          </div>
-          <div className="case-study-extra">
-            <p className="text-black">
-              This case study highlights the key challenges, solutions, and outcomes of our SAP S/4 implementation. Our team leveraged best practices and innovative approaches to deliver measurable results for our client.
-            </p>
-            <img src={image} alt="Case Study" className="case-study-image" style={{ width: '100%', marginTop: '16px', borderRadius: '8px' }} />
-          </div>
 
-
+          {image2 && (
+              <img src={image2} alt="Popup banner" className="popup-image-down" />
+            )}
+          {title2 && (
+            <h2 className="sub-heading-text-black ">{title2}</h2>
+          )}
+          {description2 && (
+            <p className="text-black">{description2}</p>
+          )}
+          {image3 && (
+              <img src={image3} alt="Popup banner" className="popup-image-down" />
+            )}
+          {title3 && (
+            <h2 className="sub-heading-text-black ">{title3}</h2>
+          )}
+          {description3 && (
+            <p className="text-black">{description3}</p>
+          )}
+        
           </div>
         </div>
       </div>

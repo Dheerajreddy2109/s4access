@@ -6,14 +6,33 @@ export default function SAPLicenseCompliance() {
   return (
     <>
       <Header />
-      <section style={{ padding: '100px 0 60px 0', minHeight: '60vh' }}>
-        <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
-          <h1 className="big-heading-text-black">SAP License compliance</h1>
-          <p className="text-black" style={{ marginTop: 32 }}>
-            This is the SAP License compliance page. Add your content here.
-          </p>
-        </div>
-      </section>
+      <section className="careers-hero-section">
+              <div className="careers-hero-left-content">
+                <p className="big-heading-text-white">
+                  Welcome message
+      
+                </p>
+                <p className="text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      
+                </p>
+      
+      
+                 <a href="/" className="main-button-blue">
+                <span>EXPLORE ALL ROLES CTA </span>
+                <span>
+                  <i className="bi bi-arrow-up"></i>
+                </span>
+              </a>
+                </div>
+      
+      
+      
+                 <div className="careers-hero-right-content">
+               
+                </div>
+      
+            </section>
       <Footer />
     </>
   );
