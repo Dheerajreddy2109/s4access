@@ -104,7 +104,7 @@ We believe that this new era demands a new approach, new thinking and new soluti
 
 
 
- {/* Our Highlights section start*/}
+{/* Our Highlights section start*/}
       <section className="our-hightlights-section">
         <div className="hightlight-tittle-container">
           <p className="big-heading-text-black">
@@ -114,42 +114,39 @@ We believe that this new era demands a new approach, new thinking and new soluti
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
-            <p className="small-text-black">Risks analyzed</p>
-            <p className="big-number-text-black">000+</p>
+            <p className="small-text-black">Access Risk Analysis</p>
+            <p className="big-number-text-black">~150</p>
           </div>
 
           <div>
             <p className="text-black">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus eius ad dolores, ipsa maxime eos
+We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> security vulnerabilities.
             </p>
           </div>
         </div>
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
-            <p className="small-text-black">Risks analyzed</p>
-            <p className="big-number-text-black">000+</p>
+            <p className="small-text-black">Experience Level</p>
+            <p className="big-number-text-black">13+</p>
           </div>
 
           <div>
             <p className="text-black">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus eius ad dolores, ipsa maxime eos
+             Our team’s 13+ years of average <br /> experience tackles complex security <br />challenges effectively.
             </p>
           </div>
         </div>
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
-            <p className="small-text-black">Risks analyzed</p>
-            <p className="big-number-text-black">000+</p>
+            <p className="small-text-black">Team Diversity</p>
+            <p className="big-number-text-black">5</p>
           </div>
 
           <div>
             <p className="text-black">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus eius ad dolores, ipsa maxime eos
+            Representing 5 nationalities, our diverse <br /> team enhances problem-solving and <br /> global strategies.
             </p>
           </div>
         </div>
@@ -428,7 +425,7 @@ Contact us and reset your<br></br> password to SAP security !
 
   <div className="about-contact-us-dark-container">
 
-    <div className="about-contact-us-dark-inner-container">
+    <div className="about-contact-us-dark-inner-container" style={{  borderLeft: 'none'}}>
       <div className="about-contact-us-dark-inner-top-container">
            <p className="big-heading-text-white">
             Partnerships & Services

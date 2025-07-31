@@ -1,20 +1,23 @@
-html  {
-   scroll-behavior: auto !important; /* Disables default smooth scrolling */
-  }
+html {
+  scroll-behavior: auto !important;
+  /* Disables default smooth scrolling */
+}
 
 * {
   margin: 0;
   padding: 0;
 }
-.green-bg-text-heading{
-   color: rgb(255, 255, 255);
+
+.green-bg-text-heading {
+  color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
   font-size: 20px;
   font-weight: 300;
   text-decoration: none;
   background-color: #2E3840;
-padding: 10px;
+  padding: 10px;
 }
+
 .extra-big-heading-text-white {
   color: white;
   font-family: "barlow", monospace;
@@ -22,6 +25,7 @@ padding: 10px;
   font-weight: 400;
   line-height: 1.3em;
 }
+
 .extra-big-heading-text-black {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
@@ -29,20 +33,23 @@ padding: 10px;
   font-weight: 400;
   line-height: 1.3em;
 }
+
 .big-heading-text-white {
   color: white;
   font-family: "barlow", monospace;
-  font-size: 45px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 1.3em;
 }
+
 .big-heading-text-black {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
-  font-size: 45px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 1.3em;
 }
+
 .sub-heading-text-black {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
@@ -50,6 +57,7 @@ padding: 10px;
   text-decoration: none;
   line-height: 1.3em;
 }
+
 .sub-heading-text-white {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
@@ -59,11 +67,19 @@ padding: 10px;
 
 .sub-big-heading-text-black {
   color: rgb(0, 0, 0);
-  font-family:"barlow", monospace;
+  font-family: "barlow", monospace;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.3em;
 }
+.sub-big-heading-text-black-lite {
+  color: rgb(0, 0, 0);
+  font-family: "barlow", monospace;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
 .sub-big-heading-text-white {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
@@ -78,6 +94,7 @@ padding: 10px;
   font-size: 16px;
   line-height: 1.3em;
 }
+
 .text-black {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
@@ -85,17 +102,20 @@ padding: 10px;
   text-decoration: none;
   line-height: 1.3em;
 }
+
 .small-text-black {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
   font-size: 14px;
 }
+
 .small-text-white {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
   font-size: 14px;
   font-weight: 300;
 }
+
 .small-text-white a {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
@@ -103,18 +123,21 @@ padding: 10px;
   font-weight: 600;
   text-decoration: none;
 }
-.small-text-white strong{
+
+.small-text-white strong {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
 }
+
 .extra-small-text-black {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
   font-size: 12px;
 }
+
 .extra-small-text-white {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
@@ -147,13 +170,14 @@ padding: 10px;
   font-family: "Barlow", monospace;
   transition: background-color 0.3s;
 }
+
 .button-green span:last-child {
   rotate: 40deg;
   margin-left: 8px;
 }
 
 .button-green:hover {
-  background-color: transparent ;
+  background-color: transparent;
   color: #40ffc9;
 }
 
@@ -173,9 +197,11 @@ padding: 10px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
+
 .border-button span:last-child {
   rotate: 40deg;
 }
+
 .border-button span:last-child i {
   color: #40ffc9;
 }
@@ -276,17 +302,21 @@ padding: 10px;
   width: fit-content;
   transition: 0.3s ease-in-out;
 }
+
 .main-button-blue:hover {
   background-color: transparent;
   color: #003377;
 }
+
 .main-button-blue span:last-child {
   margin-left: 10px;
   rotate: 40deg;
 }
+
 .main-button-blue span:last-child i {
   color: #40ffc9;
 }
+
 .main-button-blue:hover span:last-child i {
   color: #003377;
 }
@@ -295,16 +325,19 @@ padding: 10px;
 /* FAQ Section Styles */
 
 .faq-section {
-padding: 0px 50px 100px 50px;
+  padding: 0px 50px 100px 50px;
 }
+
 .faq-list {
   width: 100%;
   margin: 0 auto;
 }
+
 .faq-item {
   border-bottom: 2px solid #222;
   margin-bottom: 0;
 }
+
 .faq-question {
   width: 100%;
   background: none;
@@ -322,13 +355,16 @@ padding: 0px 50px 100px 50px;
   cursor: pointer;
   transition: color 0.2s;
 }
+
 .faq-question:hover {
   color: #2fffd8;
 }
+
 .faq-arrow {
   font-size: 1.5rem;
   margin-left: 20px;
 }
+
 .faq-answer {
   font-family: "barlow", monospace;
   font-size: 16px;
@@ -355,11 +391,13 @@ nav {
   padding-right: 50px;
   z-index: 10000000000000;
 }
+
 @keyframes slideUpBg {
   from {
     background-color: transparent;
     transform: translateY(-10px);
   }
+
   to {
     background-color: #000000;
     transform: translateY(0);
@@ -398,7 +436,8 @@ nav.scrolled {
 
 .main-logo {
   opacity: 0;
-  transform: translate(10%, -50%) scale(0); /* Starts from right */
+  transform: translate(10%, -50%) scale(0);
+  /* Starts from right */
   z-index: 1;
   cursor: pointer;
 }
@@ -406,12 +445,14 @@ nav.scrolled {
 /* Hover States */
 .logo:hover .star-logo {
   opacity: 0;
-  transform: translate(-400%, -50%) scale(0); /* Moves left & scales down */
+  transform: translate(-400%, -50%) scale(0);
+  /* Moves left & scales down */
 }
 
 .logo:hover .main-logo {
   opacity: 1;
-  transform: translate(-62%, -50%) scale(1); /* Comes to center & scales up */
+  transform: translate(-62%, -50%) scale(1);
+  /* Comes to center & scales up */
 }
 
 .nav-list {
@@ -436,14 +477,17 @@ nav.scrolled {
   font-size: 13px;
   padding-bottom: 5px;
 }
-.nav-list ul > li > a:hover {
+
+.nav-list ul>li>a:hover {
   border-bottom: 3px solid #40ffc9;
   color: #40ffc9;
 }
-.nav-list ul > li > a.active {
+
+.nav-list ul>li>a.active {
   border-bottom: 3px solid #40ffc9;
   color: #40ffc9;
 }
+
 /* MegaMenu styles */
 
 .s4-access-architecture-design {
@@ -498,4 +542,3 @@ nav.scrolled {
   background-color: #2d856c;
   color: white;
 }
-
