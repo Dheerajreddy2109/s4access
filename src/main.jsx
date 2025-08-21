@@ -22,6 +22,7 @@ import SAPSoDManagement from './pages/SAPSoDManagement.jsx';
 import S4FFEmergencyUserAutomation from './pages/S4FFEmergencyUserAutomation.jsx';
 import SAPGRCAccessControlServices from './pages/SAPGRCAccessControlServices.jsx';
 import SAPAuthorisationRedesign from './pages/SAPAuthorisationRedesign.jsx';
+import ScrollToTop from '../src/components/ScrollToTop.jsx';
 
 console.log('Main.jsx loaded'); // Test log
 
@@ -51,6 +52,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <LenisProvider>
       <BrowserRouter>
+        <ScrollToTop /> {/* Add ScrollToTop here */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -1,38 +1,42 @@
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import '../css/App.css';
+import ContactForm from '../components/ContactForm.jsx';
+
 
 function Contact() {
   return (
     <div>
       <Header />
-       <section className="careers-hero-section">
-              <div className="careers-hero-left-content">
+
+      <section className="contact-hero-section">
+             
                 <p className="big-heading-text-white">
-                  Welcome message
+                  Contact Us
       
                 </p>
                 <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
       
                 </p>
       
       
-                 <a href="/" className="main-button-blue">
-                <span>EXPLORE ALL ROLES CTA </span>
-                <span>
-                  <i className="bi bi-arrow-up"></i>
-                </span>
-              </a>
-                </div>
+        
+          
       
-      
-      
-                 <div className="careers-hero-right-content">
-               
-                </div>
+
       
             </section>
+      
+      
+      <div className="contact-container">
+      <div className="contact-content">
+       
+        <div className="contact-form-wrapper">
+          <ContactForm />
+        </div>
+      </div>
+    </div>
+      
       <Footer />
     </div>
   );

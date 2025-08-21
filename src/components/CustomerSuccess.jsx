@@ -20,6 +20,9 @@ const CustomerSuccess = ({ onReadMore, onReadMoretwo }) => (
           </a>
         </div>
       </div>
+
+
+      
       <div className="innercoustomer-success-container-left">
         <div className="innercoustomer-heading-cont">
           <p className="sub-heading-text-white">Scandinavian Forest & Paper company</p>
@@ -32,8 +35,48 @@ const CustomerSuccess = ({ onReadMore, onReadMoretwo }) => (
             Read More <i className="bi bi-arrow-right arrow-icon"></i>
           </a>
         </div>
+
       </div>
-      <div className="innercoustomer-success-container-right">
+
+
+
+
+      <div className="innercoustomer-success-container-left">
+        <div className="innercoustomer-heading-cont">
+          <p className="sub-heading-text-white">Scandinavian Forest & Paper company</p>
+          <p className="small-text-white">
+            Customer began implementing SAP S/4 with a large international service integrator. An external audit identified basic SAP access management issues, raising top management concerns. s4access was hired to conduct a detailed review to assess the severity and propose actionable solutions.
+          </p>
+        </div>
+        <div>
+          <a href="#" className="read-more-btn" onClick={onReadMoretwo}>
+            Read More <i className="bi bi-arrow-right arrow-icon"></i>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div className="innercoustomer-success-container-left">
+        <div className="innercoustomer-heading-cont">
+          <p className="sub-heading-text-white">Scandinavian Forest & Paper company</p>
+          <p className="small-text-white">
+            Customer began implementing SAP S/4 with a large international service integrator. An external audit identified basic SAP access management issues, raising top management concerns. s4access was hired to conduct a detailed review to assess the severity and propose actionable solutions.
+          </p>
+        </div>
+        <div>
+          <a href="#" className="read-more-btn" onClick={onReadMoretwo}>
+            Read More <i className="bi bi-arrow-right arrow-icon"></i>
+          </a>
+        </div>
+
+      </div>
+
+
+      
+
+
+      {/* <div className="innercoustomer-success-container-right">
         <div className="innercoustomer-heading-cont">
           <p className="sub-heading-text-white">Coming Soon...</p>
         </div>
@@ -69,7 +112,7 @@ const CustomerSuccess = ({ onReadMore, onReadMoretwo }) => (
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   </section>
 );

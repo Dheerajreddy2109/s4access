@@ -9,6 +9,7 @@ import CustomerSuccess from "../components/CustomerSuccess.jsx";
 import '../css/Home.css';
 import banner1 from '../assets/images/home-img/home-bgimg.png';
 import HomeSlider from '../components/HomeSlider.jsx';
+import { Link } from "react-router-dom";
 
 function Home() {
   const lenis = useContext(LenisContext);
@@ -88,17 +89,14 @@ function Home() {
       {/* our-highlightupper section start */}
       <section className="our-highlightupper" id="go-down-section">
         <p className="text-black">
-          A new era of SAP access security has begun. Combining over two decades
-          of experience with passion for adopting latest technology we deliver
-          new services and solutions to simplify your SAP access management
-          challenges.
+          A new era of SAP access security is here. Backed by over two decades of expertise and a passion for embracing the latest technologies, we provide innovative services and solutions designed to simplify and strengthen your SAP access management.
         </p>
-        <a href="/" className="main-button-blue">
+        <Link to="/About" className="main-button-blue">
           <span>Learn More </span>
           <span>
             <i className="bi bi-arrow-up"></i>
           </span>
-        </a>
+        </Link>
       </section>
       {/* our-highlightupper section end */}
 
@@ -396,7 +394,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="news-blogs-container">
+        {/* <div className="news-blogs-container">
           <div className="inner-news-blogs-container">
             <div className="blog-text">
               <p className="text-black">NEWS</p>
@@ -474,7 +472,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       {/* news and blogs section End */}
 

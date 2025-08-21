@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 // import './HomeSlider.css';
 import banner1 from '../assets/images/home-img/home-bgimg.png';
+import banner2 from '../assets/images/home-img/banner-home/1.jpg';
+import banner3 from '../assets/images/home-img/banner-home/2.jpg';
+import banner4 from '../assets/images/home-img/banner-home/3.jpg';
 import { Link } from 'react-router-dom'; // For SmoothLink (assuming it's a wrapper for smooth scrolling)
 
 // SmoothLink component for smooth scrolling (if not already defined)
@@ -29,15 +32,15 @@ const HomeSlider = () => {
       text: 'Leading SAP Access Management Specialist',
     },
     {
-      image: banner1,
+      image: banner2,
       text: 'Leading SAP Access Management Specialist',
     },
     {
-      image: banner1,
+      image: banner3,
       text: 'Leading SAP Access Management Specialist',
     },
     {
-      image: banner1,
+      image: banner4,
       text: 'Leading SAP Access Management Specialist',
     },
   ];
