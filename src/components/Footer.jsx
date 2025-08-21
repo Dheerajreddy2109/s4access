@@ -25,11 +25,7 @@ function Footer() {
               Home
             </Link>
           </li>
-          <li>
-            <Link to="/about" className="footer-link">
-              About
-            </Link>
-          </li>
+        
           <li>
             <Link to="/services" className="footer-link">
               Services
@@ -43,6 +39,17 @@ function Footer() {
           <li>
             <Link to="/insights" className="footer-link">
               Insights
+            </Link>
+          </li>
+          <li>
+            <Link to="/careers" className="footer-link">
+              Careers
+            </Link>
+          </li>
+
+            <li>
+            <Link to="/about" className="footer-link">
+              About
             </Link>
           </li>
           <li>

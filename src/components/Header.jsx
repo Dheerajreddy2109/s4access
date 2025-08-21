@@ -45,14 +45,7 @@ function Header() {
               Home
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              About
-            </NavLink>
-          </li>
+         
           <li
             onMouseEnter={handleMenuEnter}
             onMouseLeave={handleMenuLeave}
@@ -89,6 +82,14 @@ function Header() {
             Careers
           </NavLink>
         </li>
+         <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              About
+            </NavLink>
+          </li>
         </ul>
       </div>
       <div className="button-contact">

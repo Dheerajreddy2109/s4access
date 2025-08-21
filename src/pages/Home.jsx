@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useContext } from "react";
 import { LenisContext } from "../components/LenisContext";
 import Popup from '../components/popup/Popup.jsx';
@@ -7,7 +7,8 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import CustomerSuccess from "../components/CustomerSuccess.jsx";
 import '../css/Home.css';
-import banner1 from '../assets/images/home-img/home-bgimg.jpg';
+import banner1 from '../assets/images/home-img/home-bgimg.png';
+import HomeSlider from '../components/HomeSlider.jsx';
 
 function Home() {
   const lenis = useContext(LenisContext);
@@ -56,102 +57,33 @@ function Home() {
     }
   };
 
-
-
-
-
-
-
-
-
-
-
-
-
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [popupOpen, setPopupOpen] = useState(false);
   const [popupContent, setPopupContent] = useState({});
-  const slides = [
-    {
-      image: banner1,
-      text: "Leading SAP Access Management Specialist",
-    },
-    {
-       image: banner1,
-      text: "Leading SAP Access Management Specialist",
-    },
-    {
-      image: banner1,
-      text: "Leading SAP Access Management Specialist",
-    },
-    {
-       image: banner1,
-      text: "Leading SAP Access Management Specialist",
-    },
-  ];
 
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 10000);
-    return () => clearInterval(interval);
-  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div>
       <Header />
-      {/* carousle section start */}
-      <section className="carousel-section">
-        <div className="carousel">
-          <div
-            className="carousel-slides"
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          >
-            {slides.map((slide, index) => (
-              <div key={index} className="carousel-slide">
-                <img src={slide.image} alt={`Slide ${index + 1}`} />
-                <div className="slide-content">
-                  <p>{slide.text}</p>
-                  <a href="/" className="slide-button">
-                    <span>Learn More </span>
-                    <span>
-                      <i className="bi bi-arrow-up"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="carousel-buttons">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={currentSlide === index ? "active" : ""}
-              >
-                Slide {index + 1}
-              </button>
-            ))}
-          </div>
-        </div>
-        <SmoothLink to="#go-down-section" className="go-down-arrow">
-          <svg
-            id="fi_7242819"
-            height="512"
-            viewBox="0 0 512 512"
-            width="512"
-            xmlns="http://www.w3.org/2000/svg"
-            data-name="Layer 1"
-          >
-            <path d="m13.766 289.234a47 47 0 0 1 66.468-66.468l175.766 175.766 175.766-175.766a47 47 0 0 1 66.468 66.468l-209 209a47 47 0 0 1 -66.468 0zm209 0a47 47 0 0 0 66.468 0l209-209a47 47 0 0 0 -66.468-66.468l-175.766 175.766-175.766-175.766a47 47 0 0 0 -66.468 66.468z"></path>
-          </svg>
-        </SmoothLink>
-      </section>
-      {/* carousle section End */}
+      {/* carousel section start */}
+
+      <HomeSlider />
+      {/* carousel section End */}
 
       {/* our-highlightupper section start */}
       <section className="our-highlightupper" id="go-down-section">
@@ -186,7 +118,7 @@ function Home() {
 
           <div>
             <p className="text-black">
-We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> security vulnerabilities.
+              We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> security vulnerabilities.
             </p>
           </div>
         </div>
@@ -199,7 +131,7 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
 
           <div>
             <p className="text-black">
-             Our team’s 13+ years of average <br /> experience tackles complex security <br />challenges effectively.
+              Our team’s 13+ years of average <br /> experience tackles complex security <br />challenges effectively.
             </p>
           </div>
         </div>
@@ -212,7 +144,7 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
 
           <div>
             <p className="text-black">
-            Representing 5 nationalities, our diverse <br /> team enhances problem-solving and <br /> global strategies.
+              Representing 5 nationalities, our diverse <br /> team enhances problem-solving and <br /> global strategies.
             </p>
           </div>
         </div>
@@ -221,7 +153,7 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
 
 
 
-      
+
 
       {/* services section start */}
 
@@ -250,13 +182,13 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
           </div>
 
 
-          
+
 
           <div className="inner-service-container">
             <div>
               <img src="./src/assets/images/home-img/s45.png" alt="" />
               <p className="sub-heading-text-white">S/4 Access projects <br /><br /></p>
-      
+
               <p className="small-text-white">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
                 eius in molestiae reprehenderit quos laudantium praesentium
@@ -549,12 +481,12 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
 
 
 
-{/* last-cta-section start */}
+      {/* last-cta-section start */}
 
       <section className="last-cta-section">
         <div className="inner-end-inner-cta-left">
           <p className="big-heading-text-black">
-Find out more
+            Find out more
           </p>
 
 
@@ -567,7 +499,7 @@ Find out more
 
 
 
-         <a href="/" className="main-button-blue">
+        <a href="/" className="main-button-blue">
           <span>Contact Us </span>
           <span>
             <i className="bi bi-arrow-up"></i>
@@ -577,7 +509,7 @@ Find out more
 
       </section>
 
-{/* last-cta-section End  */}
+      {/* last-cta-section End  */}
       <Footer />
       <Popup
         open={popupOpen}

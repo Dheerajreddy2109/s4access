@@ -91,14 +91,14 @@ html {
 .text-white {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.3em;
 }
 
 .text-black {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   line-height: 1.3em;
 }
@@ -106,20 +106,20 @@ html {
 .small-text-black {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .small-text-white {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
 }
 
 .small-text-white a {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -127,7 +127,7 @@ html {
 .small-text-white strong {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -135,13 +135,13 @@ html {
 .extra-small-text-black {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .extra-small-text-white {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
 }
 

@@ -27,7 +27,7 @@
   /* background-color: red; */
   justify-content: center;
   align-items: center;
-  position: relative; /* Ensure positioning context for children */
+  position: relative; 
 }
 
 .carousel-slide img {
