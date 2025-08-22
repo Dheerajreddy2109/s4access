@@ -51,7 +51,7 @@ const ServiceSection = () => {
         <div className='our-Service-left-container-green'>
           {services.map((category, categoryIdx) => (
             <React.Fragment key={categoryIdx}>
-              <p className='category-title' style={{ backgroundColor: '#000', color: '#fff', padding: '10px', margin: '10px 0' }}>
+              <p className='sub-heading-text-white' style={{ backgroundColor: '#000', color: '#fff', padding: '10px', margin: '10px 0' }}>
                 {category.category}
               </p>
               {category.items.map((service, itemIdx) => (

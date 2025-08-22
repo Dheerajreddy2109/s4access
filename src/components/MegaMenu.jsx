@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaProjectDiagram, FaCogs, FaUserShield, FaUsersCog, FaUserTie, FaClipboardCheck, FaIdBadge, FaDraftingCompass, FaBalanceScale, FaUserSecret, FaShieldAlt, FaSyncAlt, FaArrowRight } from "react-icons/fa";
 import "../css/Header.css";
@@ -29,42 +29,56 @@ const services = [
 
 const MegaMenu = ({ show, setShow }) => {
   const hideTimeout = useRef();
-  const handleMouseEnter = () => {
+  const [hoveredCategory, setHoveredCategory] = useState(null);
+
+  const handleMouseEnter = (index) => {
     clearTimeout(hideTimeout.current);
     setShow(true);
+    setHoveredCategory(index);
   };
+
   const handleMouseLeave = () => {
     hideTimeout.current = setTimeout(() => setShow(false), 200);
+    setHoveredCategory(null);
   };
+
   return (
     <div
-      className={`megamenu${show ? " show" : ""} megamenu-fullwidth`}
-      onMouseEnter={handleMouseEnter}
+      className={`megamenu${show ? " show" : ""}`}
+      onMouseEnter={() => clearTimeout(hideTimeout.current)}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="megamenu-content megamenu-flex">
-        {/* Left: Title at bottom */}
-        {/* <div className="megamenu-title-container">
-          <p className="megamenu-title megamenu-title-large">
-            Our Services
-            <span className="megamenu-arrow">
-              <FaArrowRight />
-            </span>
-          </p>
-        </div> */}
-        {/* Right: Services grid */}
-        <div className="megamenu-services-grid">
+      <div className="megamenu-content">
+        {/* Left: Categories */}
+        <div className="megamenu-categories-container">
+          <p className="megamenu-title">categories</p>
           {services.map((category, idx) => (
-            <div key={idx} className="megamenu-category">
-              <h3 className="megamenu-category-title">{category.category}</h3>
-              <div className="megamenu-row">
-                {category.items.map((item, itemIdx) => (
-                  <div key={itemIdx} className="megamenu-list-item megamenu-grid-item">
-                    <span className="megamenu-icon megamenu-icon-large">{item.icon}</span>
-                    <Link to={item.link} className="megamenu-link">{item.name}</Link>
-                  </div>
-                ))}
-              </div>
+            <div
+              key={idx}
+              className={`megamenu-category-item ${hoveredCategory === idx ? 'active' : ''}`}
+              onMouseEnter={() => handleMouseEnter(idx)}
+            >
+              <span className="megamenu-category-icon">{category.category === "SAP Access Design" ? "" : category.category === "SAP Access Projects" ? "" : category.category === "SAP Access Services" ? "" : ""}</span>
+              <span className="megamenu-category-text">{category.category}</span>
+              <span className="megamenu-category-arrow">›</span>
+            </div>
+          ))}
+        </div>
+        {/* Right: Services grid */}
+        <div className="megamenu-services-container">
+          <p className="megamenu-title">Services</p>
+          {services.map((category, idx) => (
+            <div
+              key={idx}
+              className="megamenu-services-content"
+              style={{ display: hoveredCategory === idx ? 'block' : 'none' }}
+            >
+              {category.items.map((item, itemIdx) => (
+                <div key={itemIdx} className="megamenu-service-item">
+                  <span className="megamenu-service-icon">{item.icon}</span>
+                  <Link to={item.link} className="megamenu-service-text">{item.name}</Link>
+                </div>
+              ))}
             </div>
           ))}
         </div>
