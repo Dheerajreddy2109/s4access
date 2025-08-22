@@ -3,9 +3,13 @@ import React from 'react';
 import Footer from '../components/Footer.jsx';
 import '../css/About.css';
 import star from '../assets/images/home-img/star-black.png'
-import team1 from '../assets/images/About-img/our-team/teammate-1.jpg'
+import team1 from '../assets/images/About-img/our-team/teammate-1.jpg.webp'
+import team2 from '../assets/images/About-img/our-team/teammate-2.jpg.webp';
+import team3 from '../assets/images/About-img/our-team/teammate-3.jpg.webp';
+import team4 from '../assets/images/About-img/our-team/teammate-4.jpg.webp';
 import WholeWebsiteIcon from '../components/WholeWebsiteIcon.jsx';
-import mapimg from '../assets/images/About-img/googlemap.png'
+import Topbanner from '../assets/images/About-img/Top-banner-img.jpg';
+// import mapimg from '../assets/images/About-img/googlemap.png'
 
 function About() {
 
@@ -22,14 +26,18 @@ function About() {
 {/* banner section start */}
 <section className="about-banner-section">
 
-  <div>
+  <div className="about-banner-content-left">
     <p className="big-heading-text-white">
       Specialist in SAP<br /> access management
-    </p>
+    </p><br />
     <p className="text-white">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br /> eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
 
+  </div>
+
+  <div className="about-banner-content-right">
+    <img src={Topbanner} alt="" srcset="" />
   </div>
 
 </section>
@@ -187,13 +195,14 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
         
         </div>
 
-        <img src={team1} alt="" />
+        <img src={team3} alt="" />
 
 
         <div className="our-team-names">
 
-          <p className='team-name-text'>lorem ipsum</p>
-          <p className='team-ceo-text'>Ceo</p>
+          <p className='team-name-text'>Matti Halonen</p>
+          <p className='team-ceo-text'>Managing director
+</p>
 
 
 
@@ -206,12 +215,12 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
       <div className="ourteam-container-contacts">
 
 
-        <a href="/" className="text-black">
+        <a href="tel:+358405589069" className="text-black">
         +358 40 558 9069
 
         </a>
         <br />
-        <a href="/" className="text-black">
+        <a href="mailto:matti.halonen@s4access.com" className="text-black">
         matti.halonen@s4access.com
 
         </a>
@@ -243,8 +252,9 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
 
         <div className="our-team-names">
 
-          <p className='team-name-text'>lorem ipsum</p>
-          <p className='team-ceo-text'>Ceo</p>
+          <p className='team-name-text'>Christa Coulter</p>
+          <p className='team-ceo-text'>Director, Sap security architect
+</p>
 
 
 
@@ -257,13 +267,13 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
       <div className="ourteam-container-contacts">
 
 
-        <a href="/" className="text-black">
-        +358 40 558 9069
+        <a href="tel:+358405532204" className="text-black">
+        +358 40 553 2204
 
         </a>
         <br />
-        <a href="/" className="text-black">
-        matti.halonen@s4access.com
+        <a href="mailto:christa.coulter@s4access.com" className="text-black">
+        christa.coulter@s4access.com
 
         </a>
 
@@ -290,13 +300,13 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
         
         </div>
 
-        <img src={team1} alt="" />
+        <img src={team2} alt="" />
 
 
         <div className="our-team-names">
 
-          <p className='team-name-text'>lorem ipsum</p>
-          <p className='team-ceo-text'>Ceo</p>
+          <p className='team-name-text'>Heli Kokkala</p>
+          <p className='team-ceo-text'>Director, Head of Services</p>
 
 
 
@@ -309,13 +319,13 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
       <div className="ourteam-container-contacts">
 
 
-        <a href="/" className="text-black">
-        +358 40 558 9069
+        <a href="tel:+358404823589" className="text-black">
+        +358 40 482 3589
 
         </a>
         <br />
-        <a href="/" className="text-black">
-        matti.halonen@s4access.com
+        <a href="mailto:heli.kokkala@s4access.com" className="text-black">
+        heli.kokkala@s4access.com
 
         </a>
 
@@ -342,13 +352,14 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
         
         </div>
 
-        <img src={team1} alt="" />
+        <img src={team4} alt="" />
 
 
         <div className="our-team-names">
 
-          <p className='team-name-text'>lorem ipsum</p>
-          <p className='team-ceo-text'>Ceo</p>
+          <p className='team-name-text'>Sameer Hawaldar</p>
+          <p className='team-ceo-text'>Director, Head of projects
+</p>
 
 
 
@@ -361,28 +372,19 @@ We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> 
       <div className="ourteam-container-contacts">
 
 
-        <a href="/" className="text-black">
-        +358 40 558 9069
+        <a href="tel:+358405807659" className="text-black">
+        +358 40 580 7659
 
         </a>
         <br />
-        <a href="/" className="text-black">
-        matti.halonen@s4access.com
+        <a href="mailto:sameer.hawaldar@s4access.com" className="text-black">
+       sameer.hawaldar@s4access.com
 
         </a>
 
       </div>
 
     </div>
-
-
-
-
-
-
- 
-
-
 
 
 
@@ -445,8 +447,8 @@ Contact us and reset your<br></br> password to SAP security !
 
 Reach out to <strong>Matti Halonen</strong> at <br /><br />
 
-+358 40 558 9069
-matti.halonen@s4access.com
+  <a href="tel:+358405589069"> +358 40 558 9069</a><br />
+  <a href="mailto:matti.halonen@s4access.com">matti.halonen@s4access.com</a>
 
       </p>
 
@@ -475,8 +477,8 @@ matti.halonen@s4access.com
 
 Reach out to <strong>Christa Coulter</strong>  at <br /><br />
 
-+358 40 558 9069
-matti.halonen@s4access.com
+ <a href="tel:+358405532204">+358 40 553 2204</a><br />
+ <a href="mailto:christa.coulter@s4access.com">christa.coulter@s4access.com</a>
       </p>
 
       </div>
@@ -565,22 +567,21 @@ All inquiries must be submitted via email: <strong><a href='mailto:contact@s4acc
 <div className="about-map-centainer-left">
 
   <p className="big-heading-text-black">
-    Official <br /> Address
+    Office located in Helsinki.
     
   </p>
-  <p className="text-black">
+  <a href='https://www.google.com/maps/place/K%C3%A4sity%C3%B6l%C3%A4iskatu+23,+06100+Porvoo,+Finland/@60.3665,25.6632,17z/data=!3m1!4b1!4m6!3m5!1s0x4691a5c5c5c5c5c5:0x5c5c5c5c5c5c5c5!8m2!3d60.3665!4d25.6632!16s%2Fg%2F11c1t1t1t1' className="text-black">
 
-    <p>Käsityöläiskatu 23</p>
-          <p>06100 Porvoo</p>
-          <p>Finland</p>
+    <span>Käsityöläiskatu 23</span>
+          <span>06100 Porvoo </span> 
 
-    
-  </p>
-  
+          <span>Finland</span>
+
+  </a>
 </div>
-<div className="about-map-centainer-right">
+{/* <div className="about-map-centainer-right">
 <img src={mapimg} alt="" />
-</div>
+</div> */}
 </section>
 {/* about-map-section-End */}
 

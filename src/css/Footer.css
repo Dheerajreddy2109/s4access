@@ -72,7 +72,7 @@ footer {
 .info-contact-inner {
   /* background-color: chartreuse; */
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   flex-direction: column;
   gap: 8px;

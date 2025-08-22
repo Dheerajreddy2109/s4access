@@ -108,7 +108,7 @@ const Careers = () => {
 
       <section className="careers-our-promise-section">
         <div className="careers-our-promise-content-left">
-          <h2 className="big-heading-text-black">Our promise to you</h2>
+          <h2 className="big-heading-text-black">sap access manage <br /> attractive career choice</h2>
 
         </div>
         <div className="careers-our-promise-content-right">

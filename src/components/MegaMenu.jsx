@@ -5,26 +5,29 @@ import "../css/Header.css";
 import "../css/MegaMenu.css";
 
 const services = [
-  { name: "S/4 Access architecture design", icon: <FaProjectDiagram />, link: "/s4accessarchitecturedesign" },
-  { name: "S/4 Access projects", icon: <FaCogs />, link: "/s4accessprojects" },
-  { name: "SAP access / security consulting", icon: <FaUserShield />, link: "/sapaccesssecurityconsulting" },
-  { name: "SAP Access management service", icon: <FaUsersCog />, link: "/sapaccessmanagementservice" },
-  { name: "SAP Authorisation concept owner service", icon: <FaUserTie />, link: "/sapauthorisationconceptownerservice" },
-  { name: "SAP Access review", icon: <FaClipboardCheck />, link: "/sapaccessreview" },
-  { name: "SAP License compliance", icon: <FaIdBadge />, link: "/saplicensecompliance" },
-  { name: "SAP Authorisation concept design", icon: <FaDraftingCompass />, link: "/sapauthorisationconceptdesign" },
-  { name: "SAP SoD Management", icon: <FaBalanceScale />, link: "/sapsodmanagement" },
-  { name: "S/4 FF / Emergency user automation", icon: <FaUserSecret />, link: "/s4ffemergencyuserautomation" },
-  { name: "SAP GRC Access control services", icon: <FaShieldAlt />, link: "/sapgrcaccesscontrolservices" },
-  { name: "SAP Authorisation redesign", icon: <FaSyncAlt />, link: "/sapauthorisationredesign" }
+  { category: "SAP Access Design", items: [
+    { name: "SAP Access Management Review", icon: <FaClipboardCheck />, link: "/sapaccessreview" },
+    { name: "SoD Approach", icon: <FaBalanceScale />, link: "/sapsodmanagement" },
+    { name: "SAP Access automation", icon: <FaSyncAlt />, link: "/s4ffemergencyuserautomation" }
+  ]},
+  { category: "SAP Access Projects", items: [
+    { name: "S/4 access implementation", icon: <FaCogs />, link: "/sapauthorisationredesign" },
+    { name: "SoD / Role redesign", icon: <FaDraftingCompass />, link: "/sapauthorisationconceptdesign" },
+    { name: "Reorganisation / M&A projects", icon: <FaProjectDiagram />, link: "/sapaccesssecurityconsulting" }
+  ]},
+  { category: "SAP Access Services", items: [
+    { name: "Outsourced Access Management", icon: <FaUsersCog />, link: "/sapaccessmanagementservice" },
+    { name: "Authorisation Concept Owner", icon: <FaUserTie />, link: "/sapauthorisationconceptownerservice" },
+    { name: "Security Architect", icon: <FaUserShield />, link: "/sapgrcaccesscontrolservices" }
+  ]},
+  { category: "SAP Access Solutions", items: [
+    { name: "SoD Management", icon: <FaBalanceScale />, link: "/sapsodmanagement" },
+    { name: "FF Log review automation", icon: <FaUserSecret />, link: "/s4ffemergencyuserautomation" },
+    { name: "SAP Licence optimisation", icon: <FaIdBadge />, link: "/saplicensecompliance" }
+  ]}
 ];
 
 const MegaMenu = ({ show, setShow }) => {
-  // Split services into 4 rows, 3 columns each
-  const rows = [];
-  for (let i = 0; i < 4; i++) {
-    rows.push(services.slice(i * 3, i * 3 + 3));
-  }
   const hideTimeout = useRef();
   const handleMouseEnter = () => {
     clearTimeout(hideTimeout.current);
@@ -41,24 +44,27 @@ const MegaMenu = ({ show, setShow }) => {
     >
       <div className="megamenu-content megamenu-flex">
         {/* Left: Title at bottom */}
-        <div className="megamenu-title-container">
+        {/* <div className="megamenu-title-container">
           <p className="megamenu-title megamenu-title-large">
             Our Services
             <span className="megamenu-arrow">
               <FaArrowRight />
             </span>
           </p>
-        </div>
+        </div> */}
         {/* Right: Services grid */}
         <div className="megamenu-services-grid">
-          {rows.map((row, rowIdx) => (
-            <div key={rowIdx} className={`megamenu-row${rowIdx < 4 ? " megamenu-row-gap" : ""}`}>
-              {row.map((service, colIdx) => (
-                <div key={colIdx} className="megamenu-list-item megamenu-grid-item">
-                  <span className="megamenu-icon megamenu-icon-large">{service.icon}</span>
-                  <Link to={service.link} className="megamenu-link">{service.name}</Link>
-                </div>
-              ))}
+          {services.map((category, idx) => (
+            <div key={idx} className="megamenu-category">
+              <h3 className="megamenu-category-title">{category.category}</h3>
+              <div className="megamenu-row">
+                {category.items.map((item, itemIdx) => (
+                  <div key={itemIdx} className="megamenu-list-item megamenu-grid-item">
+                    <span className="megamenu-icon megamenu-icon-large">{item.icon}</span>
+                    <Link to={item.link} className="megamenu-link">{item.name}</Link>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>

@@ -35,61 +35,65 @@
 
 
 /* our-Service-Section start */
-
-
-.our-Service-Section{
+.our-Service-Section {
     padding: 100px 50px;
     background-color: white;
     display: flex;
     align-items: start;
     justify-content: space-between;
     gap: 100px;
-    
 }
-.our-Service-Section-left-container-sticky{
+.our-Service-Section-left-container-sticky {
     width: 40%;
-    position: sticky;
-    top: 130px;
-    left: 50px;
-    /* background-color: aqua; */
-    
 }
-.our-Service-left-container-green{
+.our-Service-left-container-green {
     margin-top: 30px;
     display: flex;
     align-items: stretch;
     flex-direction: column;
     gap: 20px;
-    
-    
 }
-.our-Service-Section-right-container{
+.our-Service-Section-right-container {
+    position: sticky;
+    top: 230px;
     width: 40%;
     background-color: #E0FFFF;
-    /* height: 200vh; */
-    border-radius: 10px;
+    border-radius: 5px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 100px;
-    
-    
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
-.scrolling-container-our-services{
-    /* background-color: black; */
+.scrolling-container-our-services {
     display: flex;
     align-items: start;
     flex-direction: column;
     gap: 20px;
-    padding-top: 270px;
+    
 }
 .active-link {
-    color: #003377; 
+    color: #003377;
     font-weight: 600;
     transition: 0.5s ease-in-out;
-
+}
+.scrolling-link-our-services{
+    /* background-color: #003377; */
+    width: fit-content;
+}
+.scrolling-link-our-services-container{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    justify-content: start;
+    flex-direction: column;
+                              
 }
 
-/* our-Service-Section End  */
+/* our-Service-Section End */
+
+
+
+
 
 
 /* Partners and Alliances Section  start*/
