@@ -497,12 +497,12 @@ function Home() {
 
 
 
-        <a href="/" className="main-button-blue">
+        <Link to="/Contact" className="main-button-blue">
           <span>Contact Us </span>
           <span>
             <i className="bi bi-arrow-up"></i>
           </span>
-        </a>
+        </Link>
 
 
       </section>
