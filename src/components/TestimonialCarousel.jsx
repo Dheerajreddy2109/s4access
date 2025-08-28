@@ -8,9 +8,6 @@ import testimonialImg from "../assets/images/Careeres-img/testimmonial-1.jpg";
 import team1 from '../assets/images/About-img/our-team/Bozhena.jpg'
 import team2 from '../assets/images/About-img/our-team/Julius.jpg'
 import team3 from '../assets/images/About-img/our-team/Palavi.jpg'
-// import team2 from '../assets/images/About-img/our-team/teammate-2.jpg.webp';
-// import team3 from '../assets/images/About-img/our-team/teammate-3.jpg.webp';
-// import team4 from '../assets/images/About-img/our-team/teammate-4.jpg.webp';
 import quoteImg from "../assets/images/Careeres-img/Union.png";
 
 const testimonials = [
@@ -41,8 +38,8 @@ const testimonials = [
 ];
 
 const TestimonialCarousel = () => (
-  <section className="testimonial-section">
-    <p className="big-heading-text-black ">Employee testimonials</p>
+  <section className="testimonialcarousel-section">
+    <p className="big-heading-text-black">Employee testimonials</p>
     <Swiper
       slidesPerView={1.5}
       spaceBetween={32}
@@ -52,16 +49,16 @@ const TestimonialCarousel = () => (
     >
       {testimonials.map((testimonial, idx) => (
         <SwiperSlide key={idx}>
-          <div className="testimonial-card">
-            <div className="testimonial-img-container">
-              <img src={testimonial.Images} alt="Employee" />
+          <div className="testimonialcarousel-card">
+            <div className="testimonialcarousel-img-container">
+              <img src={testimonial.Images} alt="Employee" className="testimonialcarousel-img" />
             </div>
-            <div className="testimonial-content">
-              <img src={quoteImg} alt="Quote" className="testimonial-quote-img" />
-              <p className="testimonial-text">{testimonial.text}</p>
-              <div className="testimonial-meta">
-                <span className="testimonial-name">{testimonial.name}</span>
-                <span className="testimonial-role">{testimonial.role}</span>
+            <div className="testimonialcarousel-content">
+              <img src={quoteImg} alt="Quote" className="testimonialcarousel-quote-img" />
+              <p className="testimonialcarousel-text">{testimonial.text}</p>
+              <div className="testimonialcarousel-meta">
+                <span className="testimonialcarousel-name">{testimonial.name}</span>
+                <span className="testimonialcarousel-role">{testimonial.role}</span>
               </div>
             </div>
           </div>

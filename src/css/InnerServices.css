@@ -74,7 +74,7 @@
 .our-service-cards .serviceCard{
   align-items: flex-end;
   background-color: #F4F4F4;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05) ;
 }
 
 
