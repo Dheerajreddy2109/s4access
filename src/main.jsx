@@ -22,6 +22,7 @@ import SAPSoDManagement from './pages/SAPSoDManagement.jsx';
 import S4FFEmergencyUserAutomation from './pages/S4FFEmergencyUserAutomation.jsx';
 import SAPGRCAccessControlServices from './pages/SAPGRCAccessControlServices.jsx';
 import SAPAuthorisationRedesign from './pages/SAPAuthorisationRedesign.jsx';
+import SAPSoDApproach from './pages/SAPSoDApproach.jsx';
 import ScrollToTop from '../src/components/ScrollToTop.jsx';
 
 console.log('Main.jsx loaded'); // Test log
@@ -65,6 +66,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/s4accessprojects" element={<S4AccessProjects />} />
           <Route path="/sapaccesssecurityconsulting" element={<SAPAccessSecurityConsulting />} />
           <Route path="/sapaccessmanagementservice" element={<SAPAccessManagementService />} />
+          <Route path="/sapsodapproach" element={<SAPSoDApproach />} />
           <Route path="/sapauthorisationconceptownerservice" element={<SAPAuthorisationConceptOwnerService />} />
           <Route path="/sapaccessreview" element={<SAPAccessReview />} />
           <Route path="/saplicensecompliance" element={<SAPLicenseCompliance />} />

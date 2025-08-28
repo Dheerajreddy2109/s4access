@@ -11,14 +11,14 @@ import team3 from '../assets/images/About-img/our-team/Palavi.jpg'
 import quoteImg from "../assets/images/Careeres-img/Union.png";
 
 const testimonials = [
-{
-    "text": "Moving to Finland to join s4access as an SAP Security Consultant was a fantastic decision. I work on diverse global projects that challenge me daily, and the supportive team makes learning seamless. The flexibility here allows me to balance work and life perfectly, creating an ideal environment for growth.",
+  {
+    "text": "I moved to Finland and started my journey at s4access as an SAP Security Consultant. Since then, it has been an amazing journey - I work on global projects, learn new things every day, and feel truly supported. The team here is incredible, people always ready to help. I enjoy the flexibility, the balance between work and life, and the opportunity to grow in many directions. It’s the most comfortable work environment I’ve ever had.",
     "name": "Bozhena",
     "role": "Employee",
     "Images": team1
   },
   {
-    "text": "Since joining s4access in Finland, my role as an SAP Security Consultant has been incredibly rewarding. The global projects keep me engaged, and the collaborative team is always ready to assist. I value the work-life balance and the chance to grow in a dynamic, supportive workplace.",
+    "text": "Joining the company as a junior employee while studying and being a new parent could have been overwhelming – but here, it hasn’t been. The flexibility I’ve been given is exceptional.I'm encouraged to grow professionally, and doing my thesis for the company is just one example of how my development is supported.It means a lot that my manager is aware of my daily work and actively helps me progress.I feel valued not just as an employee, but as a whole person.The team culture isalso incredibly supportive – I never feel like I’m going through it alone",
     "name": "Raoul",
     "role": "Employee",
     "Images": testimonialImg
@@ -30,7 +30,9 @@ const testimonials = [
     "Images": team2
   },
   {
-    "text": "As an Employee of s4access, I’m proud to lead a team where SAP Security Consultants thrive on global projects. The collaborative environment fosters innovation and learning, while our focus on flexibility ensures everyone can grow professionally while enjoying life in Finland.",
+    "text": `Joining at a senior level at S4access and now stepping into a new architect role has been an exciting journey. From the very beginning, I’ve been struck by the scale and ambition of the projects we deliver—these are high-impact initiatives that truly challenge and inspire 
+    One of the most remarkable aspects of this company is its adaptability to individual needs. Whether I’m diving into high-pressure, fast-paced projects or adjusting my workload to accommodate personal commitments, I’ve found the flexibility to strike a healthy balance between professional growth and personal well-being. 
+    Leadership here is deeply committed to development. I’ve received thoughtful guidance on how to evolve in my role and make the most of my contributions. I also feel genuinely supported by my manager, who understands my work and consistently empowers me to succeed.`,
     "name": "Pallavi",
     "role": "Employee",
     "Images": team3

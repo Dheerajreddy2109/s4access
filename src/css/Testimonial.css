@@ -12,7 +12,7 @@
   display: flex;
   background: #E0FFFF;
   width: 100%;
-  min-height: 340px;
+  height: 500px;
   flex-direction: row;
 }
 

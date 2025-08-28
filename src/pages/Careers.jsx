@@ -19,8 +19,7 @@ const Careers = () => {
 
           </p>
           <p className="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+             We believe that great people build great companies. Whether you're just starting your career or looking to take the next big step, we offer opportunities to grow, innovate, and make a real impact. Explore our open roles and discover how you can be part of something meaningful. 
           </p>
 
 
@@ -69,21 +68,17 @@ const Careers = () => {
 
 
 
-
-
-
-
       {/* why s4access section start */}
       <section className="careers-why-s4access-section">
         <div className="careers-why-s4access-content">
           <h2 className="big-heading-text-white">Why <br />
             S4access?</h2>
           <p className="text-white">
-            <strong>We are different</strong> <br /><br />
+            <strong style={{fontSize:"30px"}}>We are different</strong> <br /><br />
 
             At s4access, 'We are different' isn't just a slogan—it's a promise. Here, you might work remote but never alone with a challenge. Whether you're leading a major project or navigating a new role, there's always a colleague ready to support you. We believe in collaboration over competition, and we foster a culture where asking for help is a strength, not a weakness. This is how we grow together—and why our people stay and thrive.
             <br /><br /><br />
-            <strong>We grow</strong>
+            <strong style={{fontSize:"30px"}}>We grow</strong>
             <br /><br />
             Growth brings opportunities for the staff to grow and develop.
           </p>
@@ -93,12 +88,7 @@ const Careers = () => {
 
 
 
-      {/* Testimonial section start */}
-
-      <TestimonialCarousel />
-
-      {/* Testimonial section End */}
-
+      
 
 
 
@@ -108,7 +98,7 @@ const Careers = () => {
 
       <section className="careers-our-promise-section">
         <div className="careers-our-promise-content-left">
-          <h2 className="big-heading-text-black">sap access manage <br /> attractive career choice</h2>
+          <h2 className="big-heading-text-black">Our promise to you</h2>
 
         </div>
         <div className="careers-our-promise-content-right">
@@ -162,6 +152,13 @@ const Careers = () => {
         </div>
       </section>
       {/* careers Our promise to you section end */}
+
+      {/* Testimonial section start */}
+
+      <TestimonialCarousel />
+
+      {/* Testimonial section End */}
+
 
 
 

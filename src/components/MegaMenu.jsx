@@ -7,7 +7,7 @@ import "../css/MegaMenu.css";
 const services = [
   { category: "SAP Access Design", items: [
     { name: "SAP Access Management Review", icon: <FaClipboardCheck />, link: "/sapaccessreview" },
-    { name: "SoD Approach", icon: <FaBalanceScale />, link: "/sapsodmanagement" },
+    { name: "SoD Approach", icon: <FaBalanceScale />, link: "/sapsodapproach" },
     { name: "SAP Access automation", icon: <FaSyncAlt />, link: "/s4ffemergencyuserautomation" }
   ]},
   { category: "SAP Access Projects", items: [
@@ -29,8 +29,7 @@ const services = [
 
 const MegaMenu = ({ show, setShow }) => {
   const hideTimeout = useRef();
-  const [hoveredCategory, setHoveredCategory] = useState(null);
-
+  const [hoveredCategory, setHoveredCategory] = useState(0); 
   const handleMouseEnter = (index) => {
     clearTimeout(hideTimeout.current);
     setShow(true);
@@ -41,6 +40,12 @@ const MegaMenu = ({ show, setShow }) => {
     hideTimeout.current = setTimeout(() => setShow(false), 200);
     setHoveredCategory(null);
   };
+
+  React.useEffect(() => {
+    if (show) {
+      setHoveredCategory(0);
+    }
+  }, [show]);
 
   return (
     <div

@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import random1 from '../assets/images/Careeres-img/random-imgs/random-1.jpg';
 import random2 from '../assets/images/Careeres-img/random-imgs/random-2.jpg';
 import random3 from '../assets/images/Careeres-img/random-imgs/random-3.jpg';
-import random4 from '../assets/images/Careeres-img/random-imgs/random-4.jpg';
+// import random4 from '../assets/images/Careeres-img/random-imgs/random-4.jpg';
 import random5 from '../assets/images/Careeres-img/random-imgs/random-5.jpg';
 import random6 from '../assets/images/Careeres-img/random-imgs/random-6.jpg';
 import random7 from '../assets/images/Careeres-img/random-imgs/random-7.jpg';
 // import random8 from '../assets/images/Careeres-img/random-imgs/random-8.jpg';
-import random9 from '../assets/images/Careeres-img/random-imgs/random-9.jpg';
+// import random9 from '../assets/images/Careeres-img/random-imgs/random-9.jpg';
 
 const CareersGallerySection = () => {
   const [shuffledImages, setShuffledImages] = useState([]);
@@ -26,12 +26,12 @@ const CareersGallerySection = () => {
       { src: random1, alt: 'Random Image 1' },
       { src: random2, alt: 'Random Image 2' },
       { src: random3, alt: 'Random Image 3' },
-      { src: random4, alt: 'Random Image 4' },
+      // { src: random4, alt: 'Random Image 4' },
       { src: random5, alt: 'Random Image 5' },
       { src: random6, alt: 'Random Image 6' },
       { src: random7, alt: 'Random Image 7' },
       // { src: random8, alt: 'Random Image 8' },
-      { src: random9, alt: 'Random Image 9' },
+      // { src: random9, alt: 'Random Image 9' },
     ];
     setShuffledImages(shuffleArray(initialImages));
   }, []);
@@ -49,8 +49,8 @@ const CareersGallerySection = () => {
         <img src={shuffledImages[4]?.src} alt={shuffledImages[4]?.alt} className="gallery-img middle-row center" />
         <img src={shuffledImages[5]?.src} alt={shuffledImages[5]?.alt} className="gallery-img middle-row right" />
         {/* Bottom row: 2 larger images */}
-        <img src={shuffledImages[6]?.src} alt={shuffledImages[7]?.alt} className="gallery-img bottom-row left" />
-        <img src={shuffledImages[7]?.src} alt={shuffledImages[8]?.alt} className="gallery-img bottom-row right" />
+        {/* <img src={shuffledImages[6]?.src} alt={shuffledImages[7]?.alt} className="gallery-img bottom-row left" />
+        <img src={shuffledImages[7]?.src} alt={shuffledImages[8]?.alt} className="gallery-img bottom-row right" /> */}
       </div>
     </section>
   );

@@ -214,7 +214,7 @@
 .gallery-img.middle-row.right {
   grid-column: 3 / 5; /* Spans 2 columns */
   grid-row: 2 / 3;
-  width: 100%;
+  width: 93%;
   height: 300px;
   object-fit: cover;
   border-radius: 8px;
